@@ -1,0 +1,457 @@
+
+*** Running xst
+    with args -ifn "mojo_top_0.xst" -ofn "mojo_top_0.srp" -intstyle ise
+
+Reading design: mojo_top_0.prj
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/simple_dual_ram_30.v" into library work
+Parsing module <simple_dual_ram_30>.
+Analyzing Verilog file "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/async_fifo_23.v" into library work
+Parsing module <async_fifo_23>.
+Analyzing Verilog file "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/tmds_encoder_11.v" into library work
+Parsing module <tmds_encoder_11>.
+Analyzing Verilog file "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/serdes_n_to_1_9.v" into library work
+Parsing module <serdes_n_to_1_9>.
+Analyzing Verilog file "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/fifo_2x_reducer_14.v" into library work
+Parsing module <fifo_2x_reducer_14>.
+Analyzing Verilog file "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/dvi_encoder_8.v" into library work
+Parsing module <dvi_encoder_8>.
+Analyzing Verilog file "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/reset_conditioner_2.v" into library work
+Parsing module <reset_conditioner_2>.
+Analyzing Verilog file "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/hdmi_encoder_1.v" into library work
+Parsing module <hdmi_encoder_1>.
+Analyzing Verilog file "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/coreGen/clk_wiz_v3_6.v" into library work
+Parsing module <clk_wiz_v3_6>.
+Analyzing Verilog file "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
+Parsing module <mojo_top_0>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mojo_top_0>.
+
+Elaborating module <clk_wiz_v3_6>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <DCM_SP(CLKDV_DIVIDE=2.0,CLKFX_DIVIDE=2,CLKFX_MULTIPLY=3,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",CLK_FEEDBACK="NONE",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+WARNING:HDLCompiler:1127 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/coreGen/clk_wiz_v3_6.v" Line 111: Assignment to clk0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/coreGen/clk_wiz_v3_6.v" Line 126: Assignment to locked_int ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/coreGen/clk_wiz_v3_6.v" Line 127: Assignment to status_int ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+
+Elaborating module <hdmi_encoder_1>.
+
+Elaborating module <PLL_BASE(CLKIN_PERIOD=10,CLKFBOUT_MULT=10,CLKOUT0_DIVIDE=1,CLKOUT1_DIVIDE=10,CLKOUT2_DIVIDE=5,COMPENSATION="SOURCE_SYNCHRONOUS")>.
+WARNING:HDLCompiler:1127 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/hdmi_encoder_1.v" Line 53: Assignment to M_pll_oserdes_CLKOUT3 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/hdmi_encoder_1.v" Line 54: Assignment to M_pll_oserdes_CLKOUT4 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/hdmi_encoder_1.v" Line 55: Assignment to M_pll_oserdes_CLKOUT5 ignored, since the identifier is never used
+
+Elaborating module <BUFPLL(DIVIDE=5)>.
+
+Elaborating module <dvi_encoder_8>.
+
+Elaborating module <serdes_n_to_1_9>.
+
+Elaborating module <OSERDES2(DATA_WIDTH=5,DATA_RATE_OQ="SDR",DATA_RATE_OT="SDR",SERDES_MODE="MASTER",OUTPUT_MODE="DIFFERENTIAL")>.
+WARNING:HDLCompiler:1127 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/serdes_n_to_1_9.v" Line 71: Assignment to M_mserdes_TQ ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/serdes_n_to_1_9.v" Line 74: Assignment to M_mserdes_SHIFTOUT3 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/serdes_n_to_1_9.v" Line 75: Assignment to M_mserdes_SHIFTOUT4 ignored, since the identifier is never used
+
+Elaborating module <OSERDES2(DATA_WIDTH=5,DATA_RATE_OQ="SDR",DATA_RATE_OT="SDR",SERDES_MODE="SLAVE",OUTPUT_MODE="DIFFERENTIAL")>.
+WARNING:HDLCompiler:1127 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/serdes_n_to_1_9.v" Line 121: Assignment to M_sserdes_OQ ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/serdes_n_to_1_9.v" Line 122: Assignment to M_sserdes_TQ ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/serdes_n_to_1_9.v" Line 123: Assignment to M_sserdes_SHIFTOUT1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/serdes_n_to_1_9.v" Line 124: Assignment to M_sserdes_SHIFTOUT2 ignored, since the identifier is never used
+
+Elaborating module <OBUFDS>.
+
+Elaborating module <tmds_encoder_11>.
+
+Elaborating module <fifo_2x_reducer_14>.
+
+Elaborating module <async_fifo_23>.
+
+Elaborating module <simple_dual_ram_30(SIZE=5'b11110,DEPTH=5'b10000)>.
+WARNING:HDLCompiler:1127 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/fifo_2x_reducer_14.v" Line 36: Assignment to M_fifo_full ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 52: Assignment to M_hdmi_active ignored, since the identifier is never used
+
+Elaborating module <reset_conditioner_2>.
+WARNING:HDLCompiler:1127 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 65: Assignment to rst ignored, since the identifier is never used
+WARNING:Xst:2972 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/mojo_top_0.v" line 59. All outputs of instance <reset_cond> of block <reset_conditioner_2> are unconnected in block <mojo_top_0>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mojo_top_0>.
+    Related source file is "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/mojo_top_0.v".
+WARNING:Xst:647 - Input <cclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_ss> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_mosi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/mojo_top_0.v" line 43: Output port <active> of the instance <hdmi> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/mojo_top_0.v" line 59: Output port <out> of the instance <reset_cond> is unconnected or connected to loadless signal.
+    Found 1-bit tristate buffer for signal <spi_miso> created at line 65
+    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 65
+    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 65
+    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 65
+    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 65
+    Found 1-bit tristate buffer for signal <avr_rx> created at line 65
+    Summary:
+	inferred   6 Tristate(s).
+Unit <mojo_top_0> synthesized.
+
+Synthesizing Unit <clk_wiz_v3_6>.
+    Related source file is "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/coreGen/clk_wiz_v3_6.v".
+    Summary:
+	no macro.
+Unit <clk_wiz_v3_6> synthesized.
+
+Synthesizing Unit <hdmi_encoder_1>.
+    Related source file is "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/hdmi_encoder_1.v".
+    Found 10-bit register for signal <M_ctrY_q>.
+    Found 11-bit register for signal <M_ctrX_q>.
+    Found 11-bit adder for signal <M_ctrX_q[10]_GND_6_o_add_1_OUT> created at line 123.
+    Found 10-bit adder for signal <M_ctrY_q[9]_GND_6_o_add_5_OUT> created at line 125.
+    Found 11-bit comparator lessequal for signal <n0009> created at line 128
+    Found 11-bit comparator greater for signal <M_ctrX_q[10]_PWR_6_o_LessThan_10_o> created at line 128
+    Found 10-bit comparator lessequal for signal <n0013> created at line 129
+    Found 10-bit comparator greater for signal <M_ctrY_q[9]_PWR_6_o_LessThan_12_o> created at line 129
+    Found 11-bit comparator greater for signal <M_ctrX_q[10]_PWR_6_o_LessThan_13_o> created at line 130
+    Found 10-bit comparator greater for signal <M_ctrY_q[9]_PWR_6_o_LessThan_14_o> created at line 130
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <hdmi_encoder_1> synthesized.
+
+Synthesizing Unit <dvi_encoder_8>.
+    Related source file is "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/dvi_encoder_8.v".
+    Found 1-bit register for signal <M_toggle_q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <dvi_encoder_8> synthesized.
+
+Synthesizing Unit <serdes_n_to_1_9>.
+    Related source file is "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/serdes_n_to_1_9.v".
+    Summary:
+	no macro.
+Unit <serdes_n_to_1_9> synthesized.
+
+Synthesizing Unit <tmds_encoder_11>.
+    Related source file is "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/tmds_encoder_11.v".
+    Found 8-bit register for signal <M_din_q>.
+    Found 4-bit register for signal <M_num_ones9_q>.
+    Found 2-bit register for signal <M_c0_pipe_q>.
+    Found 2-bit register for signal <M_c1_pipe_q>.
+    Found 2-bit register for signal <M_de_pipe_q>.
+    Found 9-bit register for signal <M_data9_pipe_q>.
+    Found 10-bit register for signal <M_dout_q>.
+    Found 5-bit register for signal <M_count_q>.
+    Found 4-bit register for signal <M_num_ones_q>.
+    Found 5-bit subtractor for signal <M_count_q[4]_GND_14_o_sub_26_OUT> created at line 71.
+    Found 5-bit subtractor for signal <M_count_q[4]_GND_14_o_sub_29_OUT> created at line 71.
+    Found 5-bit subtractor for signal <M_count_q[4]_GND_14_o_sub_35_OUT> created at line 77.
+    Found 5-bit subtractor for signal <n0246> created at line 81.
+    Found 5-bit subtractor for signal <n0235> created at line 81.
+    Found 5-bit subtractor for signal <M_count_q[4]_GND_14_o_sub_39_OUT> created at line 81.
+    Found 2-bit adder for signal <n0194[1:0]> created at line 54.
+    Found 3-bit adder for signal <n0197[2:0]> created at line 54.
+    Found 2-bit adder for signal <n0215[1:0]> created at line 62.
+    Found 3-bit adder for signal <n0218[2:0]> created at line 62.
+    Found 5-bit adder for signal <M_count_q[4]_GND_14_o_add_24_OUT> created at line 71.
+    Found 5-bit adder for signal <M_count_q[4]_GND_14_o_add_26_OUT> created at line 71.
+    Found 5-bit adder for signal <n0243> created at line 77.
+    Found 5-bit adder for signal <M_count_q[4]_GND_14_o_add_33_OUT> created at line 77.
+    Found 5-bit adder for signal <M_count_q[4]_GND_14_o_add_36_OUT> created at line 81.
+    Found 4-bit adder for signal <_n0259> created at line 21.
+    Found 4-bit adder for signal <_n0260> created at line 21.
+    Found 4-bit adder for signal <_n0261> created at line 21.
+    Found 4-bit adder for signal <_n0262> created at line 21.
+    Found 4-bit adder for signal <M_num_ones_d> created at line 21.
+    Found 4-bit adder for signal <_n0264> created at line 23.
+    Found 4-bit adder for signal <_n0265> created at line 23.
+    Found 4-bit adder for signal <_n0266> created at line 23.
+    Found 4-bit adder for signal <_n0267> created at line 23.
+    Found 4-bit adder for signal <M_num_ones9_d> created at line 23.
+    Found 4x10-bit Read Only RAM for signal <M_c1_pipe_q[1]_PWR_14_o_wide_mux_41_OUT>
+    Found 4-bit comparator greater for signal <GND_14_o_M_num_ones_q[3]_LessThan_8_o> created at line 56
+    Found 4-bit comparator greater for signal <GND_14_o_M_num_ones9_q[3]_LessThan_20_o> created at line 65
+    Found 4-bit comparator greater for signal <M_num_ones9_q[3]_GND_14_o_LessThan_21_o> created at line 65
+    Summary:
+	inferred   1 RAM(s).
+	inferred  25 Adder/Subtractor(s).
+	inferred  46 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  37 Multiplexer(s).
+Unit <tmds_encoder_11> synthesized.
+
+Synthesizing Unit <fifo_2x_reducer_14>.
+    Related source file is "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/fifo_2x_reducer_14.v".
+INFO:Xst:3210 - "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/fifo_2x_reducer_14.v" line 28: Output port <full> of the instance <fifo> is unconnected or connected to loadless signal.
+    Found 30-bit register for signal <M_word_q>.
+    Found 1-bit register for signal <M_flag_q>.
+    Summary:
+	inferred  31 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <fifo_2x_reducer_14> synthesized.
+
+Synthesizing Unit <async_fifo_23>.
+    Related source file is "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/async_fifo_23.v".
+    Found 8-bit register for signal <M_wsync_q>.
+    Found 4-bit register for signal <M_raddr_q>.
+    Found 8-bit register for signal <M_rsync_q>.
+    Found 4-bit register for signal <M_waddr_q>.
+    Found 4-bit adder for signal <n0052[3:0]> created at line 73.
+    Found 4-bit adder for signal <M_raddr_q[3]_GND_16_o_add_10_OUT> created at line 90.
+    Found 4-bit comparator equal for signal <full> created at line 77
+    Found 4-bit comparator equal for signal <empty> created at line 78
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <async_fifo_23> synthesized.
+
+Synthesizing Unit <simple_dual_ram_30>.
+    Related source file is "C:/Users/okay1/Documents/GitHub/mojo-hdmi-shield-example/Test Pattern/work/planAhead/Test Pattern/Test Pattern.srcs/sources_1/imports/verilog/simple_dual_ram_30.v".
+        SIZE = 5'b11110
+        DEPTH = 5'b10000
+    Found 16x30-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 30-bit register for signal <read_data>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  30 D-type flip-flop(s).
+Unit <simple_dual_ram_30> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x30-bit dual-port RAM                               : 1
+ 4x10-bit single-port Read Only RAM                    : 3
+# Adders/Subtractors                                   : 79
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 1
+ 2-bit adder                                           : 6
+ 3-bit adder                                           : 6
+ 4-bit adder                                           : 32
+ 5-bit adder                                           : 15
+ 5-bit subtractor                                      : 18
+# Registers                                            : 37
+ 1-bit register                                        : 2
+ 10-bit register                                       : 4
+ 11-bit register                                       : 1
+ 2-bit register                                        : 9
+ 30-bit register                                       : 2
+ 4-bit register                                        : 8
+ 5-bit register                                        : 3
+ 8-bit register                                        : 5
+ 9-bit register                                        : 3
+# Comparators                                          : 17
+ 10-bit comparator greater                             : 2
+ 10-bit comparator lessequal                           : 1
+ 11-bit comparator greater                             : 2
+ 11-bit comparator lessequal                           : 1
+ 4-bit comparator equal                                : 2
+ 4-bit comparator greater                              : 9
+# Multiplexers                                         : 113
+ 1-bit 2-to-1 multiplexer                              : 96
+ 10-bit 2-to-1 multiplexer                             : 3
+ 15-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 12
+# Tristates                                            : 6
+ 1-bit tristate buffer                                 : 6
+# Xors                                                 : 46
+ 1-bit xor2                                            : 42
+ 4-bit xor2                                            : 3
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <async_fifo_23>.
+The following registers are absorbed into counter <M_raddr_q>: 1 register on signal <M_raddr_q>.
+The following registers are absorbed into counter <M_waddr_q>: 1 register on signal <M_waddr_q>.
+Unit <async_fifo_23> synthesized (advanced).
+
+Synthesizing (advanced) Unit <hdmi_encoder_1>.
+The following registers are absorbed into counter <M_ctrX_q>: 1 register on signal <M_ctrX_q>.
+The following registers are absorbed into counter <M_ctrY_q>: 1 register on signal <M_ctrY_q>.
+Unit <hdmi_encoder_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <simple_dual_ram_30>.
+INFO:Xst:3231 - The small RAM <Mram_mem> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 30-bit                    |          |
+    |     clkA           | connected to signal <wclk>          | rise     |
+    |     weA            | connected to signal <write_en>      | high     |
+    |     addrA          | connected to signal <waddr>         |          |
+    |     diA            | connected to signal <write_data>    |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 16-word x 30-bit                    |          |
+    |     addrB          | connected to signal <raddr>         |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <simple_dual_ram_30> synthesized (advanced).
+
+Synthesizing (advanced) Unit <tmds_encoder_11>.
+	The following adders/subtractors are grouped into adder tree <Msub_M_count_q[4]_GND_14_o_sub_35_OUT1> :
+ 	<Madd_n0243> in block <tmds_encoder_11>, 	<Madd_M_count_q[4]_GND_14_o_add_33_OUT> in block <tmds_encoder_11>, 	<Msub_M_count_q[4]_GND_14_o_sub_35_OUT> in block <tmds_encoder_11>.
+	The following adders/subtractors are grouped into adder tree <Madd_M_num_ones9_d_Madd1> :
+ 	<Madd__n0264> in block <tmds_encoder_11>, 	<Madd__n0265> in block <tmds_encoder_11>, 	<Madd__n0267_Madd> in block <tmds_encoder_11>, 	<Madd_n0215[1:0]> in block <tmds_encoder_11>, 	<Madd_M_num_ones9_d_Madd> in block <tmds_encoder_11>.
+	The following adders/subtractors are grouped into adder tree <Madd_M_num_ones_d_Madd1> :
+ 	<Madd__n0259> in block <tmds_encoder_11>, 	<Madd__n0260> in block <tmds_encoder_11>, 	<Madd__n0262_Madd> in block <tmds_encoder_11>, 	<Madd_n0194[1:0]> in block <tmds_encoder_11>, 	<Madd_M_num_ones_d_Madd> in block <tmds_encoder_11>.
+INFO:Xst:3231 - The small RAM <Mram_M_c1_pipe_q[1]_PWR_14_o_wide_mux_41_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 10-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(M_c1_pipe_q<1>,M_c0_pipe_q<1>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <tmds_encoder_11> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x30-bit dual-port distributed RAM                   : 1
+ 4x10-bit single-port distributed Read Only RAM        : 3
+# Adders/Subtractors                                   : 26
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 9
+ 5-bit subtractor                                      : 15
+# Adder Trees                                          : 9
+ 4-bit / 6-inputs adder tree                           : 6
+ 5-bit / 4-inputs adder tree                           : 3
+# Counters                                             : 4
+ 10-bit up counter                                     : 1
+ 11-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 216
+ Flip-Flops                                            : 216
+# Comparators                                          : 17
+ 10-bit comparator greater                             : 2
+ 10-bit comparator lessequal                           : 1
+ 11-bit comparator greater                             : 2
+ 11-bit comparator lessequal                           : 1
+ 4-bit comparator equal                                : 2
+ 4-bit comparator greater                              : 9
+# Multiplexers                                         : 113
+ 1-bit 2-to-1 multiplexer                              : 96
+ 10-bit 2-to-1 multiplexer                             : 3
+ 15-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 12
+# Xors                                                 : 46
+ 1-bit xor2                                            : 42
+ 4-bit xor2                                            : 3
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance pll_oserdes in unit pll_oserdes of type PLL_BASE has been replaced by PLL_ADV
+
+Optimizing unit <simple_dual_ram_30> ...
+
+Optimizing unit <mojo_top_0> ...
+
+Optimizing unit <hdmi_encoder_1> ...
+
+Optimizing unit <dvi_encoder_8> ...
+
+Optimizing unit <tmds_encoder_11> ...
+WARNING:Xst:1293 - FF/Latch <M_count_q_0> has a constant value of 0 in block <tmds_encoder_11>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <fifo_2x_reducer_14> ...
+
+Optimizing unit <async_fifo_23> ...
+WARNING:Xst:1293 - FF/Latch <hdmi/dvi/enc_blue/M_count_q_0> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <hdmi/dvi/enc_green/M_count_q_0> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <hdmi/dvi/enc_red/M_count_q_0> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <hdmi/dvi/enc_blue/M_c1_pipe_q_0> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <hdmi/dvi/enc_green/M_c1_pipe_q_0> <hdmi/dvi/enc_red/M_c1_pipe_q_0> 
+INFO:Xst:2261 - The FF/Latch <hdmi/dvi/enc_blue/M_c1_pipe_q_1> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <hdmi/dvi/enc_green/M_c1_pipe_q_1> <hdmi/dvi/enc_red/M_c1_pipe_q_1> 
+INFO:Xst:2261 - The FF/Latch <hdmi/dvi/enc_blue/M_c0_pipe_q_0> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <hdmi/dvi/enc_green/M_c0_pipe_q_0> <hdmi/dvi/enc_red/M_c0_pipe_q_0> 
+INFO:Xst:2261 - The FF/Latch <hdmi/dvi/enc_blue/M_c0_pipe_q_1> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <hdmi/dvi/enc_green/M_c0_pipe_q_1> <hdmi/dvi/enc_red/M_c0_pipe_q_1> 
+INFO:Xst:2261 - The FF/Latch <hdmi/dvi/enc_blue/M_de_pipe_q_0> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <hdmi/dvi/enc_green/M_de_pipe_q_0> <hdmi/dvi/enc_red/M_de_pipe_q_0> 
+INFO:Xst:2261 - The FF/Latch <hdmi/dvi/enc_blue/M_de_pipe_q_1> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <hdmi/dvi/enc_green/M_de_pipe_q_1> <hdmi/dvi/enc_red/M_de_pipe_q_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 8.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 230
+ Flip-Flops                                            : 230
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+hdmi/pll_oserdes/CLKOUT1           | BUFG                   | 161   |
+hdmi/pll_oserdes/CLKOUT2           | BUFG                   | 74    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.792ns (Maximum Frequency: 172.652MHz)
+   Minimum input arrival time before clock: 3.409ns
+   Maximum output required time after clock: 3.498ns
+   Maximum combinational path delay: 3.593ns
+
+=========================================================================

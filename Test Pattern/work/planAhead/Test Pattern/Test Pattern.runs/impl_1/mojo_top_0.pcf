@@ -1,0 +1,304 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Dec 08 16:41:35 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+CONFIG VCCAUX = "3.3";
+COMP "clk" LOCATE = SITE "P56" LEVEL 1;
+COMP "cclk" LOCATE = SITE "P70" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "P38" LEVEL 1;
+COMP "spi_sck" LOCATE = SITE "P43" LEVEL 1;
+COMP "hdmi1_tmds[0]" LOCATE = SITE "P142" LEVEL 1;
+COMP "hdmi1_tmds[1]" LOCATE = SITE "P140" LEVEL 1;
+COMP "hdmi1_tmds[2]" LOCATE = SITE "P138" LEVEL 1;
+COMP "hdmi1_tmds[3]" LOCATE = SITE "P144" LEVEL 1;
+PIN hdmi1_tmds[3]_pin<0> = BEL "hdmi1_tmds[3]" PINNAME PAD;
+PIN "hdmi1_tmds[3]_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "avr_rx_busy" LOCATE = SITE "P39" LEVEL 1;
+COMP "led[0]" LOCATE = SITE "P134" LEVEL 1;
+COMP "led[1]" LOCATE = SITE "P133" LEVEL 1;
+COMP "led[2]" LOCATE = SITE "P132" LEVEL 1;
+COMP "led[3]" LOCATE = SITE "P131" LEVEL 1;
+COMP "led[4]" LOCATE = SITE "P127" LEVEL 1;
+COMP "led[5]" LOCATE = SITE "P126" LEVEL 1;
+COMP "led[6]" LOCATE = SITE "P124" LEVEL 1;
+COMP "led[7]" LOCATE = SITE "P123" LEVEL 1;
+COMP "avr_tx" LOCATE = SITE "P55" LEVEL 1;
+COMP "spi_ss" LOCATE = SITE "P48" LEVEL 1;
+COMP "spi_mosi" LOCATE = SITE "P44" LEVEL 1;
+COMP "hdmi1_tmdsb[0]" LOCATE = SITE "P141" LEVEL 1;
+COMP "hdmi1_tmdsb[1]" LOCATE = SITE "P139" LEVEL 1;
+COMP "hdmi1_tmdsb[2]" LOCATE = SITE "P137" LEVEL 1;
+COMP "hdmi1_tmdsb[3]" LOCATE = SITE "P143" LEVEL 1;
+PIN hdmi1_tmdsb[3]_pin<0> = BEL "hdmi1_tmdsb[3]" PINNAME PAD;
+PIN "hdmi1_tmdsb[3]_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+PIN hdmi/pll_oserdes/PLL_ADV_pins<2> = BEL "hdmi/pll_oserdes/PLL_ADV" PINNAME
+        CLKIN1;
+TIMEGRP clk_wiz_clkfx = BEL "clk_wiz/clkout1_buf" PIN
+        "hdmi/pll_oserdes/PLL_ADV_pins<2>";
+PIN hdmi/dvi/clkser/mserdes_pins<1> = BEL "hdmi/dvi/clkser/mserdes" PINNAME
+        CLKDIV;
+PIN hdmi/dvi/clkser/sserdes_pins<1> = BEL "hdmi/dvi/clkser/sserdes" PINNAME
+        CLKDIV;
+PIN hdmi/dvi/blueser/mserdes_pins<1> = BEL "hdmi/dvi/blueser/mserdes" PINNAME
+        CLKDIV;
+PIN hdmi/dvi/blueser/sserdes_pins<1> = BEL "hdmi/dvi/blueser/sserdes" PINNAME
+        CLKDIV;
+PIN hdmi/dvi/greenser/mserdes_pins<1> = BEL "hdmi/dvi/greenser/mserdes"
+        PINNAME CLKDIV;
+PIN hdmi/dvi/greenser/sserdes_pins<1> = BEL "hdmi/dvi/greenser/sserdes"
+        PINNAME CLKDIV;
+PIN hdmi/dvi/redser/mserdes_pins<1> = BEL "hdmi/dvi/redser/mserdes" PINNAME
+        CLKDIV;
+PIN hdmi/dvi/redser/sserdes_pins<1> = BEL "hdmi/dvi/redser/sserdes" PINNAME
+        CLKDIV;
+TIMEGRP hdmi_M_pll_oserdes_CLKOUT2 = BEL "hdmi/pclkx2_buf" BEL
+        "hdmi/dvi/M_toggle_q" BEL "hdmi/dvi/fifo/M_word_q_29" BEL
+        "hdmi/dvi/fifo/M_word_q_28" BEL "hdmi/dvi/fifo/M_word_q_27" BEL
+        "hdmi/dvi/fifo/M_word_q_26" BEL "hdmi/dvi/fifo/M_word_q_25" BEL
+        "hdmi/dvi/fifo/M_word_q_24" BEL "hdmi/dvi/fifo/M_word_q_23" BEL
+        "hdmi/dvi/fifo/M_word_q_22" BEL "hdmi/dvi/fifo/M_word_q_21" BEL
+        "hdmi/dvi/fifo/M_word_q_20" BEL "hdmi/dvi/fifo/M_word_q_19" BEL
+        "hdmi/dvi/fifo/M_word_q_18" BEL "hdmi/dvi/fifo/M_word_q_17" BEL
+        "hdmi/dvi/fifo/M_word_q_16" BEL "hdmi/dvi/fifo/M_word_q_15" BEL
+        "hdmi/dvi/fifo/M_word_q_14" BEL "hdmi/dvi/fifo/M_word_q_13" BEL
+        "hdmi/dvi/fifo/M_word_q_12" BEL "hdmi/dvi/fifo/M_word_q_11" BEL
+        "hdmi/dvi/fifo/M_word_q_10" BEL "hdmi/dvi/fifo/M_word_q_9" BEL
+        "hdmi/dvi/fifo/M_word_q_8" BEL "hdmi/dvi/fifo/M_word_q_7" BEL
+        "hdmi/dvi/fifo/M_word_q_6" BEL "hdmi/dvi/fifo/M_word_q_5" BEL
+        "hdmi/dvi/fifo/M_word_q_4" BEL "hdmi/dvi/fifo/M_word_q_3" BEL
+        "hdmi/dvi/fifo/M_word_q_2" BEL "hdmi/dvi/fifo/M_word_q_1" BEL
+        "hdmi/dvi/fifo/M_word_q_0" BEL "hdmi/dvi/fifo/M_flag_q" BEL
+        "hdmi/dvi/fifo/fifo/M_raddr_q_3" BEL "hdmi/dvi/fifo/fifo/M_raddr_q_2"
+        BEL "hdmi/dvi/fifo/fifo/M_raddr_q_1" BEL
+        "hdmi/dvi/fifo/fifo/M_raddr_q_0" BEL "hdmi/dvi/fifo/fifo/M_rsync_q_7"
+        BEL "hdmi/dvi/fifo/fifo/M_rsync_q_6" BEL
+        "hdmi/dvi/fifo/fifo/M_rsync_q_5" BEL "hdmi/dvi/fifo/fifo/M_rsync_q_4"
+        BEL "hdmi/dvi/fifo/fifo/M_rsync_q_3" BEL
+        "hdmi/dvi/fifo/fifo/M_rsync_q_2" BEL "hdmi/dvi/fifo/fifo/M_rsync_q_1"
+        BEL "hdmi/dvi/fifo/fifo/M_rsync_q_0" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_29" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_28" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_27" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_26" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_25" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_24" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_23" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_22" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_21" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_20" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_19" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_18" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_17" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_16" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_15" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_14" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_13" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_12" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_11" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_10" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_9" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_8" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_7" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_6" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_5" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_4" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_3" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_2" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_1" BEL
+        "hdmi/dvi/fifo/fifo/ram/read_data_0" PIN
+        "hdmi/dvi/clkser/mserdes_pins<1>" PIN
+        "hdmi/dvi/clkser/sserdes_pins<1>" PIN
+        "hdmi/dvi/blueser/mserdes_pins<1>" PIN
+        "hdmi/dvi/blueser/sserdes_pins<1>" PIN
+        "hdmi/dvi/greenser/mserdes_pins<1>" PIN
+        "hdmi/dvi/greenser/sserdes_pins<1>" PIN
+        "hdmi/dvi/redser/mserdes_pins<1>" PIN
+        "hdmi/dvi/redser/sserdes_pins<1>";
+TIMEGRP hdmi_M_pll_oserdes_CLKOUT1 = BEL "hdmi/pclk_buf" BEL
+        "hdmi/M_ctrX_q_10" BEL "hdmi/M_ctrX_q_9" BEL "hdmi/M_ctrX_q_8" BEL
+        "hdmi/M_ctrX_q_7" BEL "hdmi/M_ctrX_q_6" BEL "hdmi/M_ctrX_q_5" BEL
+        "hdmi/M_ctrX_q_4" BEL "hdmi/M_ctrX_q_3" BEL "hdmi/M_ctrX_q_2" BEL
+        "hdmi/M_ctrX_q_1" BEL "hdmi/M_ctrX_q_0" BEL "hdmi/M_ctrY_q_9" BEL
+        "hdmi/M_ctrY_q_8" BEL "hdmi/M_ctrY_q_7" BEL "hdmi/M_ctrY_q_6" BEL
+        "hdmi/M_ctrY_q_5" BEL "hdmi/M_ctrY_q_4" BEL "hdmi/M_ctrY_q_3" BEL
+        "hdmi/M_ctrY_q_2" BEL "hdmi/M_ctrY_q_1" BEL "hdmi/M_ctrY_q_0" BEL
+        "hdmi/dvi/fifo/fifo/M_waddr_q_3" BEL "hdmi/dvi/fifo/fifo/M_waddr_q_2"
+        BEL "hdmi/dvi/fifo/fifo/M_waddr_q_1" BEL
+        "hdmi/dvi/fifo/fifo/M_waddr_q_0" BEL "hdmi/dvi/fifo/fifo/M_wsync_q_7"
+        BEL "hdmi/dvi/fifo/fifo/M_wsync_q_6" BEL
+        "hdmi/dvi/fifo/fifo/M_wsync_q_5" BEL "hdmi/dvi/fifo/fifo/M_wsync_q_4"
+        BEL "hdmi/dvi/fifo/fifo/M_wsync_q_3" BEL
+        "hdmi/dvi/fifo/fifo/M_wsync_q_2" BEL "hdmi/dvi/fifo/fifo/M_wsync_q_1"
+        BEL "hdmi/dvi/fifo/fifo/M_wsync_q_0" BEL
+        "hdmi/dvi/enc_green/M_count_q_4" BEL "hdmi/dvi/enc_green/M_count_q_3"
+        BEL "hdmi/dvi/enc_green/M_count_q_2" BEL
+        "hdmi/dvi/enc_green/M_count_q_1" BEL "hdmi/dvi/enc_green/M_dout_q_9"
+        BEL "hdmi/dvi/enc_green/M_dout_q_8" BEL
+        "hdmi/dvi/enc_green/M_dout_q_7" BEL "hdmi/dvi/enc_green/M_dout_q_6"
+        BEL "hdmi/dvi/enc_green/M_dout_q_5" BEL
+        "hdmi/dvi/enc_green/M_dout_q_4" BEL "hdmi/dvi/enc_green/M_dout_q_3"
+        BEL "hdmi/dvi/enc_green/M_dout_q_2" BEL
+        "hdmi/dvi/enc_green/M_dout_q_1" BEL "hdmi/dvi/enc_green/M_dout_q_0"
+        BEL "hdmi/dvi/enc_green/M_num_ones9_q_3" BEL
+        "hdmi/dvi/enc_green/M_num_ones9_q_2" BEL
+        "hdmi/dvi/enc_green/M_num_ones9_q_1" BEL
+        "hdmi/dvi/enc_green/M_num_ones9_q_0" BEL
+        "hdmi/dvi/enc_green/M_data9_pipe_q_8" BEL
+        "hdmi/dvi/enc_green/M_data9_pipe_q_7" BEL
+        "hdmi/dvi/enc_green/M_data9_pipe_q_6" BEL
+        "hdmi/dvi/enc_green/M_data9_pipe_q_5" BEL
+        "hdmi/dvi/enc_green/M_data9_pipe_q_4" BEL
+        "hdmi/dvi/enc_green/M_data9_pipe_q_3" BEL
+        "hdmi/dvi/enc_green/M_data9_pipe_q_2" BEL
+        "hdmi/dvi/enc_green/M_data9_pipe_q_1" BEL
+        "hdmi/dvi/enc_green/M_data9_pipe_q_0" BEL
+        "hdmi/dvi/enc_green/M_num_ones_q_3" BEL
+        "hdmi/dvi/enc_green/M_num_ones_q_2" BEL
+        "hdmi/dvi/enc_green/M_num_ones_q_1" BEL
+        "hdmi/dvi/enc_green/M_num_ones_q_0" BEL "hdmi/dvi/enc_green/M_din_q_7"
+        BEL "hdmi/dvi/enc_green/M_din_q_6" BEL "hdmi/dvi/enc_green/M_din_q_5"
+        BEL "hdmi/dvi/enc_green/M_din_q_4" BEL "hdmi/dvi/enc_green/M_din_q_3"
+        BEL "hdmi/dvi/enc_green/M_din_q_2" BEL "hdmi/dvi/enc_green/M_din_q_1"
+        BEL "hdmi/dvi/enc_green/M_din_q_0" BEL "hdmi/dvi/enc_blue/M_count_q_4"
+        BEL "hdmi/dvi/enc_blue/M_count_q_3" BEL
+        "hdmi/dvi/enc_blue/M_count_q_2" BEL "hdmi/dvi/enc_blue/M_count_q_1"
+        BEL "hdmi/dvi/enc_blue/M_dout_q_9" BEL "hdmi/dvi/enc_blue/M_dout_q_8"
+        BEL "hdmi/dvi/enc_blue/M_dout_q_7" BEL "hdmi/dvi/enc_blue/M_dout_q_6"
+        BEL "hdmi/dvi/enc_blue/M_dout_q_5" BEL "hdmi/dvi/enc_blue/M_dout_q_4"
+        BEL "hdmi/dvi/enc_blue/M_dout_q_3" BEL "hdmi/dvi/enc_blue/M_dout_q_2"
+        BEL "hdmi/dvi/enc_blue/M_dout_q_1" BEL "hdmi/dvi/enc_blue/M_dout_q_0"
+        BEL "hdmi/dvi/enc_blue/M_num_ones9_q_3" BEL
+        "hdmi/dvi/enc_blue/M_num_ones9_q_2" BEL
+        "hdmi/dvi/enc_blue/M_num_ones9_q_1" BEL
+        "hdmi/dvi/enc_blue/M_num_ones9_q_0" BEL
+        "hdmi/dvi/enc_blue/M_data9_pipe_q_8" BEL
+        "hdmi/dvi/enc_blue/M_data9_pipe_q_7" BEL
+        "hdmi/dvi/enc_blue/M_data9_pipe_q_6" BEL
+        "hdmi/dvi/enc_blue/M_data9_pipe_q_5" BEL
+        "hdmi/dvi/enc_blue/M_data9_pipe_q_4" BEL
+        "hdmi/dvi/enc_blue/M_data9_pipe_q_3" BEL
+        "hdmi/dvi/enc_blue/M_data9_pipe_q_2" BEL
+        "hdmi/dvi/enc_blue/M_data9_pipe_q_1" BEL
+        "hdmi/dvi/enc_blue/M_data9_pipe_q_0" BEL
+        "hdmi/dvi/enc_blue/M_num_ones_q_3" BEL
+        "hdmi/dvi/enc_blue/M_num_ones_q_2" BEL
+        "hdmi/dvi/enc_blue/M_num_ones_q_1" BEL
+        "hdmi/dvi/enc_blue/M_num_ones_q_0" BEL
+        "hdmi/dvi/enc_blue/M_de_pipe_q_1" BEL
+        "hdmi/dvi/enc_blue/M_de_pipe_q_0" BEL
+        "hdmi/dvi/enc_blue/M_c1_pipe_q_1" BEL
+        "hdmi/dvi/enc_blue/M_c1_pipe_q_0" BEL "hdmi/dvi/enc_blue/M_din_q_7"
+        BEL "hdmi/dvi/enc_blue/M_din_q_6" BEL "hdmi/dvi/enc_blue/M_din_q_5"
+        BEL "hdmi/dvi/enc_blue/M_din_q_4" BEL "hdmi/dvi/enc_blue/M_din_q_3"
+        BEL "hdmi/dvi/enc_blue/M_din_q_2" BEL "hdmi/dvi/enc_blue/M_din_q_1"
+        BEL "hdmi/dvi/enc_blue/M_din_q_0" BEL
+        "hdmi/dvi/enc_blue/M_c0_pipe_q_1" BEL
+        "hdmi/dvi/enc_blue/M_c0_pipe_q_0" BEL "hdmi/dvi/enc_red/M_count_q_4"
+        BEL "hdmi/dvi/enc_red/M_count_q_3" BEL "hdmi/dvi/enc_red/M_count_q_2"
+        BEL "hdmi/dvi/enc_red/M_count_q_1" BEL "hdmi/dvi/enc_red/M_dout_q_9"
+        BEL "hdmi/dvi/enc_red/M_dout_q_8" BEL "hdmi/dvi/enc_red/M_dout_q_7"
+        BEL "hdmi/dvi/enc_red/M_dout_q_6" BEL "hdmi/dvi/enc_red/M_dout_q_5"
+        BEL "hdmi/dvi/enc_red/M_dout_q_4" BEL "hdmi/dvi/enc_red/M_dout_q_3"
+        BEL "hdmi/dvi/enc_red/M_dout_q_2" BEL "hdmi/dvi/enc_red/M_dout_q_1"
+        BEL "hdmi/dvi/enc_red/M_dout_q_0" BEL
+        "hdmi/dvi/enc_red/M_num_ones9_q_3" BEL
+        "hdmi/dvi/enc_red/M_num_ones9_q_2" BEL
+        "hdmi/dvi/enc_red/M_num_ones9_q_1" BEL
+        "hdmi/dvi/enc_red/M_num_ones9_q_0" BEL
+        "hdmi/dvi/enc_red/M_data9_pipe_q_8" BEL
+        "hdmi/dvi/enc_red/M_data9_pipe_q_7" BEL
+        "hdmi/dvi/enc_red/M_data9_pipe_q_6" BEL
+        "hdmi/dvi/enc_red/M_data9_pipe_q_5" BEL
+        "hdmi/dvi/enc_red/M_data9_pipe_q_4" BEL
+        "hdmi/dvi/enc_red/M_data9_pipe_q_3" BEL
+        "hdmi/dvi/enc_red/M_data9_pipe_q_2" BEL
+        "hdmi/dvi/enc_red/M_data9_pipe_q_1" BEL
+        "hdmi/dvi/enc_red/M_data9_pipe_q_0" BEL
+        "hdmi/dvi/enc_red/M_num_ones_q_3" BEL
+        "hdmi/dvi/enc_red/M_num_ones_q_2" BEL
+        "hdmi/dvi/enc_red/M_num_ones_q_1" BEL
+        "hdmi/dvi/enc_red/M_num_ones_q_0" BEL "hdmi/dvi/enc_red/M_din_q_7" BEL
+        "hdmi/dvi/enc_red/M_din_q_6" BEL "hdmi/dvi/enc_red/M_din_q_5" BEL
+        "hdmi/dvi/enc_red/M_din_q_4" BEL "hdmi/dvi/enc_red/M_din_q_3" BEL
+        "hdmi/dvi/enc_red/M_din_q_2" BEL "hdmi/dvi/enc_red/M_din_q_1" BEL
+        "hdmi/dvi/enc_red/M_din_q_0" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMA_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMA" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMB_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMB" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMC_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMC" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMD_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMD" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMA_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMA" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMB_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMB" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMC_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMC" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMD_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMD" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMA_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMA" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMB_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMB" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMC_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMC" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMD_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMD" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMA_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMA" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMB_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMB" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMC_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMC" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMD_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMD" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem5_RAMA_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem5_RAMA" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem5_RAMB_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem5_RAMB" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem5_RAMC_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem5_RAMC" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem5_RAMD_D1" BEL
+        "hdmi/dvi/fifo/fifo/ram/Mram_mem5_RAMD";
+PIN hdmi/dvi/clkser/mserdes_pins<0> = BEL "hdmi/dvi/clkser/mserdes" PINNAME
+        CLK0;
+PIN hdmi/dvi/clkser/sserdes_pins<0> = BEL "hdmi/dvi/clkser/sserdes" PINNAME
+        CLK0;
+PIN hdmi/dvi/blueser/mserdes_pins<0> = BEL "hdmi/dvi/blueser/mserdes" PINNAME
+        CLK0;
+PIN hdmi/dvi/blueser/sserdes_pins<0> = BEL "hdmi/dvi/blueser/sserdes" PINNAME
+        CLK0;
+PIN hdmi/dvi/greenser/mserdes_pins<0> = BEL "hdmi/dvi/greenser/mserdes"
+        PINNAME CLK0;
+PIN hdmi/dvi/greenser/sserdes_pins<0> = BEL "hdmi/dvi/greenser/sserdes"
+        PINNAME CLK0;
+PIN hdmi/dvi/redser/mserdes_pins<0> = BEL "hdmi/dvi/redser/mserdes" PINNAME
+        CLK0;
+PIN hdmi/dvi/redser/sserdes_pins<0> = BEL "hdmi/dvi/redser/sserdes" PINNAME
+        CLK0;
+TIMEGRP hdmi_M_pll_oserdes_CLKOUT0 = PIN "hdmi/dvi/clkser/mserdes_pins<0>" PIN
+        "hdmi/dvi/clkser/sserdes_pins<0>" PIN
+        "hdmi/dvi/blueser/mserdes_pins<0>" PIN
+        "hdmi/dvi/blueser/sserdes_pins<0>" PIN
+        "hdmi/dvi/greenser/mserdes_pins<0>" PIN
+        "hdmi/dvi/greenser/sserdes_pins<0>" PIN
+        "hdmi/dvi/redser/mserdes_pins<0>" PIN
+        "hdmi/dvi/redser/sserdes_pins<0>";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN clk_wiz/dcm_sp_inst_pins<2> = BEL "clk_wiz/dcm_sp_inst" PINNAME CLKIN;
+TIMEGRP clk = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "clk_wiz/dcm_sp_inst_pins<2>";
+TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
+TS_clk_wiz_clkfx = PERIOD TIMEGRP "clk_wiz_clkfx" TS_clk * 1.5 HIGH 50%;
+TS_hdmi_M_pll_oserdes_CLKOUT1 = PERIOD TIMEGRP "hdmi_M_pll_oserdes_CLKOUT1"
+        TS_clk_wiz_clkfx HIGH 50%;
+TS_hdmi_M_pll_oserdes_CLKOUT0 = PERIOD TIMEGRP "hdmi_M_pll_oserdes_CLKOUT0"
+        TS_clk_wiz_clkfx * 10 HIGH 50%;
+TS_hdmi_M_pll_oserdes_CLKOUT2 = PERIOD TIMEGRP "hdmi_M_pll_oserdes_CLKOUT2"
+        TS_clk_wiz_clkfx * 2 HIGH 50%;
+SCHEMATIC END;
+

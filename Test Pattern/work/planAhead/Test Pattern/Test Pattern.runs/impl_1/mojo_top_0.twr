@@ -1,0 +1,2966 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -o
+mojo_top_0.twr -v 30 -l 30 mojo_top_0_routed.ncd mojo_top_0.pcf
+
+Design file:              mojo_top_0_routed.ncd
+Physical constraint file: mojo_top_0.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report, limited to 30 items per constraint
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   8.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 10.333ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 3.000ns (333.333MHz) (Tdcmper_CLKFX)
+  Physical resource: clk_wiz/dcm_sp_inst/CLKFX
+  Logical resource: clk_wiz/dcm_sp_inst/CLKFX
+  Location pin: DCM_X0Y1.CLKFX
+  Clock network: clk_wiz/clkfx
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: clk_wiz/dcm_sp_inst/CLKIN
+  Logical resource: clk_wiz/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: clk_wiz/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: clk_wiz/dcm_sp_inst/CLKIN
+  Logical resource: clk_wiz/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: clk_wiz/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 17.000ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 3.000ns (333.333MHz) (Tdcmper_CLKIN)
+  Physical resource: clk_wiz/dcm_sp_inst/CLKIN
+  Logical resource: clk_wiz/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: clk_wiz/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 186.667ns (max period limit - period)
+  Period: 13.333ns
+  Max period limit: 200.000ns (5.000MHz) (Tdcmper_CLKFX)
+  Physical resource: clk_wiz/dcm_sp_inst/CLKFX
+  Logical resource: clk_wiz/dcm_sp_inst/CLKFX
+  Location pin: DCM_X0Y1.CLKFX
+  Clock network: clk_wiz/clkfx
+--------------------------------------------------------------------------------
+Slack: 1980.000ns (max period limit - period)
+  Period: 20.000ns
+  Max period limit: 2000.000ns (0.500MHz) (Tdcmper_CLKIN)
+  Physical resource: clk_wiz/dcm_sp_inst/CLKIN
+  Logical resource: clk_wiz/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: clk_wiz/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_wiz_clkfx = PERIOD TIMEGRP "clk_wiz_clkfx" TS_clk * 
+1.5 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   5.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk_wiz_clkfx = PERIOD TIMEGRP "clk_wiz_clkfx" TS_clk * 1.5 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 0.281ns (period - min period limit)
+  Period: 1.333ns
+  Min period limit: 1.052ns (950.570MHz) (Tpllper_CLKOUT(Foutmax))
+  Physical resource: hdmi/pll_oserdes/PLL_ADV/CLKOUT0
+  Logical resource: hdmi/pll_oserdes/PLL_ADV/CLKOUT0
+  Location pin: PLL_ADV_X0Y0.CLKOUT0
+  Clock network: hdmi/M_pll_oserdes_CLKOUT0
+--------------------------------------------------------------------------------
+Slack: 8.333ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 13.333ns
+  Low pulse: 6.666ns
+  Low pulse limit: 2.500ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: hdmi/pll_oserdes/PLL_ADV/CLKIN1
+  Logical resource: hdmi/pll_oserdes/PLL_ADV/CLKIN1
+  Location pin: PLL_ADV_X0Y0.CLKIN2
+  Clock network: M_clk_wiz_CLK_OUT1
+--------------------------------------------------------------------------------
+Slack: 8.333ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 13.333ns
+  High pulse: 6.666ns
+  High pulse limit: 2.500ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: hdmi/pll_oserdes/PLL_ADV/CLKIN1
+  Logical resource: hdmi/pll_oserdes/PLL_ADV/CLKIN1
+  Location pin: PLL_ADV_X0Y0.CLKIN2
+  Clock network: M_clk_wiz_CLK_OUT1
+--------------------------------------------------------------------------------
+Slack: 10.667ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: clk_wiz/clkout1_buf/I0
+  Logical resource: clk_wiz/clkout1_buf/I0
+  Location pin: BUFGMUX_X2Y4.I0
+  Clock network: clk_wiz/clkfx
+--------------------------------------------------------------------------------
+Slack: 11.113ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 2.220ns (450.450MHz) (Tpllper_CLKIN(Finmax))
+  Physical resource: hdmi/pll_oserdes/PLL_ADV/CLKIN1
+  Logical resource: hdmi/pll_oserdes/PLL_ADV/CLKIN1
+  Location pin: PLL_ADV_X0Y0.CLKIN2
+  Clock network: M_clk_wiz_CLK_OUT1
+--------------------------------------------------------------------------------
+Slack: 11.113ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 2.220ns (450.450MHz) (Tpllper_CLKFB)
+  Physical resource: hdmi/pll_oserdes/PLL_ADV/CLKFBOUT
+  Logical resource: hdmi/pll_oserdes/PLL_ADV/CLKFBOUT
+  Location pin: PLL_ADV_X0Y0.CLKFBOUT
+  Clock network: hdmi/M_pll_oserdes_CLKFBOUT
+--------------------------------------------------------------------------------
+Slack: 12.281ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.052ns (950.570MHz) (Tpllper_CLKOUT(Foutmax))
+  Physical resource: hdmi/pll_oserdes/PLL_ADV/CLKOUT1
+  Logical resource: hdmi/pll_oserdes/PLL_ADV/CLKOUT1
+  Location pin: PLL_ADV_X0Y0.CLKOUT1
+  Clock network: hdmi/M_pll_oserdes_CLKOUT1
+--------------------------------------------------------------------------------
+Slack: 39.297ns (max period limit - period)
+  Period: 13.333ns
+  Max period limit: 52.630ns (19.001MHz) (Tpllper_CLKIN)
+  Physical resource: hdmi/pll_oserdes/PLL_ADV/CLKIN1
+  Logical resource: hdmi/pll_oserdes/PLL_ADV/CLKIN1
+  Location pin: PLL_ADV_X0Y0.CLKIN2
+  Clock network: M_clk_wiz_CLK_OUT1
+--------------------------------------------------------------------------------
+Slack: 39.297ns (max period limit - period)
+  Period: 13.333ns
+  Max period limit: 52.630ns (19.001MHz) (Tpllper_CLKFB)
+  Physical resource: hdmi/pll_oserdes/PLL_ADV/CLKFBOUT
+  Logical resource: hdmi/pll_oserdes/PLL_ADV/CLKFBOUT
+  Location pin: PLL_ADV_X0Y0.CLKFBOUT
+  Clock network: hdmi/M_pll_oserdes_CLKFBOUT
+--------------------------------------------------------------------------------
+Slack: 306.667ns (max period limit - period)
+  Period: 13.333ns
+  Max period limit: 320.000ns (3.125MHz) (Tpllper_CLKOUT(Foutmin))
+  Physical resource: hdmi/pll_oserdes/PLL_ADV/CLKOUT1
+  Logical resource: hdmi/pll_oserdes/PLL_ADV/CLKOUT1
+  Location pin: PLL_ADV_X0Y0.CLKOUT1
+  Clock network: hdmi/M_pll_oserdes_CLKOUT1
+--------------------------------------------------------------------------------
+Slack: 318.667ns (max period limit - period)
+  Period: 1.333ns
+  Max period limit: 320.000ns (3.125MHz) (Tpllper_CLKOUT(Foutmin))
+  Physical resource: hdmi/pll_oserdes/PLL_ADV/CLKOUT0
+  Logical resource: hdmi/pll_oserdes/PLL_ADV/CLKOUT0
+  Location pin: PLL_ADV_X0Y0.CLKOUT0
+  Clock network: hdmi/M_pll_oserdes_CLKOUT0
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_hdmi_M_pll_oserdes_CLKOUT1 = PERIOD TIMEGRP 
+"hdmi_M_pll_oserdes_CLKOUT1"         TS_clk_wiz_clkfx HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 4261 paths analyzed, 892 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.809ns.
+--------------------------------------------------------------------------------
+Slack:                  4.108ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_1 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/M_wsync_q_0 (FF)
+  Requirement:          6.667ns
+  Data Path Delay:      1.685ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.644ns (1.381 - 2.025)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.230ns
+
+  Clock Uncertainty:          0.230ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_1 to hdmi/dvi/fifo/fifo/M_wsync_q_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y52.BQ      Tcko                  0.525   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_1
+    SLICE_X15Y52.B2      net (fanout=9)        0.787   hdmi/dvi/fifo/M_raddr_q_1
+    SLICE_X15Y52.CLK     Tas                   0.373   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/M_wsync_d<0>1
+                                                       hdmi/dvi/fifo/fifo/M_wsync_q_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.685ns (0.898ns logic, 0.787ns route)
+                                                       (53.3% logic, 46.7% route)
+
+--------------------------------------------------------------------------------
+Slack:                  4.245ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_1 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/M_wsync_q_1 (FF)
+  Requirement:          6.667ns
+  Data Path Delay:      1.548ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.644ns (1.381 - 2.025)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.230ns
+
+  Clock Uncertainty:          0.230ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_1 to hdmi/dvi/fifo/fifo/M_wsync_q_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y52.BQ      Tcko                  0.525   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_1
+    SLICE_X15Y52.C5      net (fanout=9)        0.650   hdmi/dvi/fifo/M_raddr_q_1
+    SLICE_X15Y52.CLK     Tas                   0.373   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/Mxor_M_wsync_d<3:0>_1_xo<0>1
+                                                       hdmi/dvi/fifo/fifo/M_wsync_q_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.548ns (0.898ns logic, 0.650ns route)
+                                                       (58.0% logic, 42.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  4.248ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_0 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/M_wsync_q_0 (FF)
+  Requirement:          6.667ns
+  Data Path Delay:      1.545ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.644ns (1.381 - 2.025)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.230ns
+
+  Clock Uncertainty:          0.230ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_0 to hdmi/dvi/fifo/fifo/M_wsync_q_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y52.AQ      Tcko                  0.525   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_0
+    SLICE_X15Y52.B3      net (fanout=7)        0.647   hdmi/dvi/fifo/M_raddr_q_0
+    SLICE_X15Y52.CLK     Tas                   0.373   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/M_wsync_d<0>1
+                                                       hdmi/dvi/fifo/fifo/M_wsync_q_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.545ns (0.898ns logic, 0.647ns route)
+                                                       (58.1% logic, 41.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  4.352ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_2 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/M_wsync_q_1 (FF)
+  Requirement:          6.667ns
+  Data Path Delay:      1.439ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.646ns (1.381 - 2.027)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.230ns
+
+  Clock Uncertainty:          0.230ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_2 to hdmi/dvi/fifo/fifo/M_wsync_q_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y51.AQ      Tcko                  0.476   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_2
+    SLICE_X15Y52.C3      net (fanout=10)       0.590   hdmi/dvi/fifo/fifo/M_raddr_q[2]
+    SLICE_X15Y52.CLK     Tas                   0.373   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/Mxor_M_wsync_d<3:0>_1_xo<0>1
+                                                       hdmi/dvi/fifo/fifo/M_wsync_q_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.439ns (0.849ns logic, 0.590ns route)
+                                                       (59.0% logic, 41.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  4.461ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_2 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/M_wsync_q_2 (FF)
+  Requirement:          6.667ns
+  Data Path Delay:      1.330ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.646ns (1.381 - 2.027)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.230ns
+
+  Clock Uncertainty:          0.230ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_2 to hdmi/dvi/fifo/fifo/M_wsync_q_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y51.AQ      Tcko                  0.476   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_2
+    SLICE_X15Y52.C3      net (fanout=10)       0.590   hdmi/dvi/fifo/fifo/M_raddr_q[2]
+    SLICE_X15Y52.CLK     Tas                   0.264   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/Mxor_M_wsync_d<3:0>_2_xo<0>1
+                                                       hdmi/dvi/fifo/fifo/M_wsync_q_2
+    -------------------------------------------------  ---------------------------
+    Total                                      1.330ns (0.740ns logic, 0.590ns route)
+                                                       (55.6% logic, 44.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  4.507ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_3 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/M_wsync_q_2 (FF)
+  Requirement:          6.667ns
+  Data Path Delay:      1.284ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.646ns (1.381 - 2.027)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.230ns
+
+  Clock Uncertainty:          0.230ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_3 to hdmi/dvi/fifo/fifo/M_wsync_q_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y51.BQ      Tcko                  0.476   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_3
+    SLICE_X15Y52.C4      net (fanout=10)       0.544   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+    SLICE_X15Y52.CLK     Tas                   0.264   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/Mxor_M_wsync_d<3:0>_2_xo<0>1
+                                                       hdmi/dvi/fifo/fifo/M_wsync_q_2
+    -------------------------------------------------  ---------------------------
+    Total                                      1.284ns (0.740ns logic, 0.544ns route)
+                                                       (57.6% logic, 42.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  4.528ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_3 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/M_wsync_q_3 (FF)
+  Requirement:          6.667ns
+  Data Path Delay:      1.260ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.649ns (1.378 - 2.027)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.230ns
+
+  Clock Uncertainty:          0.230ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_3 to hdmi/dvi/fifo/fifo/M_wsync_q_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y51.BQ      Tcko                  0.476   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_3
+    SLICE_X15Y53.AX      net (fanout=10)       0.670   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+    SLICE_X15Y53.CLK     Tdick                 0.114   hdmi/dvi/fifo/fifo/M_wsync_q[3]
+                                                       hdmi/dvi/fifo/fifo/M_wsync_q_3
+    -------------------------------------------------  ---------------------------
+    Total                                      1.260ns (0.590ns logic, 0.670ns route)
+                                                       (46.8% logic, 53.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  6.524ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_num_ones9_q_2 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_9 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      6.739ns (Levels of Logic = 2)
+  Clock Path Skew:      0.040ns (0.778 - 0.738)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_num_ones9_q_2 to hdmi/dvi/enc_green/M_dout_q_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y21.BQ      Tcko                  0.476   hdmi/dvi/enc_green/M_num_ones9_q[3]
+                                                       hdmi/dvi/enc_green/M_num_ones9_q_2
+    SLICE_X1Y21.C1       net (fanout=18)       1.940   hdmi/dvi/enc_green/M_num_ones9_q[2]
+    SLICE_X1Y21.C        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y49.B2      net (fanout=14)       3.715   hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y49.CLK     Tas                   0.349   hdmi/dvi/M_enc_green_data_out[9]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d101
+                                                       hdmi/dvi/enc_green/M_dout_q_9
+    -------------------------------------------------  ---------------------------
+    Total                                      6.739ns (1.084ns logic, 5.655ns route)
+                                                       (16.1% logic, 83.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  6.709ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_num_ones9_q_0 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_9 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      6.557ns (Levels of Logic = 2)
+  Clock Path Skew:      0.043ns (0.778 - 0.735)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_num_ones9_q_0 to hdmi/dvi/enc_green/M_dout_q_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y22.DQ      Tcko                  0.476   hdmi/dvi/enc_green/M_num_ones9_q[0]
+                                                       hdmi/dvi/enc_green/M_num_ones9_q_0
+    SLICE_X1Y21.C3       net (fanout=18)       1.758   hdmi/dvi/enc_green/M_num_ones9_q[0]
+    SLICE_X1Y21.C        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y49.B2      net (fanout=14)       3.715   hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y49.CLK     Tas                   0.349   hdmi/dvi/M_enc_green_data_out[9]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d101
+                                                       hdmi/dvi/enc_green/M_dout_q_9
+    -------------------------------------------------  ---------------------------
+    Total                                      6.557ns (1.084ns logic, 5.473ns route)
+                                                       (16.5% logic, 83.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  6.709ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_num_ones9_q_1 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_9 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      6.554ns (Levels of Logic = 2)
+  Clock Path Skew:      0.040ns (0.778 - 0.738)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_num_ones9_q_1 to hdmi/dvi/enc_green/M_dout_q_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y21.AQ      Tcko                  0.476   hdmi/dvi/enc_green/M_num_ones9_q[3]
+                                                       hdmi/dvi/enc_green/M_num_ones9_q_1
+    SLICE_X1Y21.C4       net (fanout=20)       1.755   hdmi/dvi/enc_green/M_num_ones9_q[1]
+    SLICE_X1Y21.C        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y49.B2      net (fanout=14)       3.715   hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y49.CLK     Tas                   0.349   hdmi/dvi/M_enc_green_data_out[9]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d101
+                                                       hdmi/dvi/enc_green/M_dout_q_9
+    -------------------------------------------------  ---------------------------
+    Total                                      6.554ns (1.084ns logic, 5.470ns route)
+                                                       (16.5% logic, 83.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  6.877ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_num_ones9_q_3 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_9 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      6.386ns (Levels of Logic = 2)
+  Clock Path Skew:      0.040ns (0.778 - 0.738)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_num_ones9_q_3 to hdmi/dvi/enc_green/M_dout_q_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y21.DQ      Tcko                  0.476   hdmi/dvi/enc_green/M_num_ones9_q[3]
+                                                       hdmi/dvi/enc_green/M_num_ones9_q_3
+    SLICE_X1Y21.C6       net (fanout=11)       1.587   hdmi/dvi/enc_green/M_num_ones9_q[3]
+    SLICE_X1Y21.C        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y49.B2      net (fanout=14)       3.715   hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y49.CLK     Tas                   0.349   hdmi/dvi/M_enc_green_data_out[9]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d101
+                                                       hdmi/dvi/enc_green/M_dout_q_9
+    -------------------------------------------------  ---------------------------
+    Total                                      6.386ns (1.084ns logic, 5.302ns route)
+                                                       (17.0% logic, 83.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.049ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_count_q_2 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_9 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      6.196ns (Levels of Logic = 3)
+  Clock Path Skew:      0.022ns (0.778 - 0.756)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_count_q_2 to hdmi/dvi/enc_green/M_dout_q_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y20.CQ       Tcko                  0.430   hdmi/dvi/enc_green/M_count_q[2]
+                                                       hdmi/dvi/enc_green/M_count_q_2
+    SLICE_X1Y21.D1       net (fanout=12)       0.772   hdmi/dvi/enc_green/M_count_q[2]
+    SLICE_X1Y21.D        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip_SW0
+    SLICE_X1Y21.C5       net (fanout=2)        0.412   hdmi/dvi/enc_green/N16
+    SLICE_X1Y21.C        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y49.B2      net (fanout=14)       3.715   hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y49.CLK     Tas                   0.349   hdmi/dvi/M_enc_green_data_out[9]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d101
+                                                       hdmi/dvi/enc_green/M_dout_q_9
+    -------------------------------------------------  ---------------------------
+    Total                                      6.196ns (1.297ns logic, 4.899ns route)
+                                                       (20.9% logic, 79.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.202ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_count_q_4 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_9 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      6.045ns (Levels of Logic = 3)
+  Clock Path Skew:      0.024ns (0.778 - 0.754)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_count_q_4 to hdmi/dvi/enc_green/M_dout_q_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y21.BQ       Tcko                  0.430   hdmi/dvi/enc_green/M_count_q[4]
+                                                       hdmi/dvi/enc_green/M_count_q_4
+    SLICE_X1Y21.D3       net (fanout=5)        0.621   hdmi/dvi/enc_green/M_count_q[4]
+    SLICE_X1Y21.D        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip_SW0
+    SLICE_X1Y21.C5       net (fanout=2)        0.412   hdmi/dvi/enc_green/N16
+    SLICE_X1Y21.C        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y49.B2      net (fanout=14)       3.715   hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y49.CLK     Tas                   0.349   hdmi/dvi/M_enc_green_data_out[9]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d101
+                                                       hdmi/dvi/enc_green/M_dout_q_9
+    -------------------------------------------------  ---------------------------
+    Total                                      6.045ns (1.297ns logic, 4.748ns route)
+                                                       (21.5% logic, 78.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.270ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_num_ones9_q_2 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_9 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      5.993ns (Levels of Logic = 2)
+  Clock Path Skew:      0.040ns (0.778 - 0.738)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_num_ones9_q_2 to hdmi/dvi/enc_green/M_dout_q_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y21.BQ      Tcko                  0.476   hdmi/dvi/enc_green/M_num_ones9_q[3]
+                                                       hdmi/dvi/enc_green/M_num_ones9_q_2
+    SLICE_X3Y22.B1       net (fanout=18)       1.919   hdmi/dvi/enc_green/M_num_ones9_q[2]
+    SLICE_X3Y22.B        Tilo                  0.259   hdmi/dvi/enc_green/flip
+                                                       hdmi/dvi/enc_green/flip1
+    SLICE_X10Y49.B5      net (fanout=13)       2.990   hdmi/dvi/enc_green/flip
+    SLICE_X10Y49.CLK     Tas                   0.349   hdmi/dvi/M_enc_green_data_out[9]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d101
+                                                       hdmi/dvi/enc_green/M_dout_q_9
+    -------------------------------------------------  ---------------------------
+    Total                                      5.993ns (1.084ns logic, 4.909ns route)
+                                                       (18.1% logic, 81.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.292ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_num_ones9_q_2 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_2 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      5.902ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.029ns (0.709 - 0.738)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_num_ones9_q_2 to hdmi/dvi/enc_green/M_dout_q_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y21.BQ      Tcko                  0.476   hdmi/dvi/enc_green/M_num_ones9_q[3]
+                                                       hdmi/dvi/enc_green/M_num_ones9_q_2
+    SLICE_X1Y21.C1       net (fanout=18)       1.940   hdmi/dvi/enc_green/M_num_ones9_q[2]
+    SLICE_X1Y21.C        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip
+    SLICE_X11Y37.C2      net (fanout=14)       2.854   hdmi/dvi/enc_green/cond_flip
+    SLICE_X11Y37.CLK     Tas                   0.373   hdmi/dvi/M_enc_green_data_out[3]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d31
+                                                       hdmi/dvi/enc_green/M_dout_q_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.902ns (1.108ns logic, 4.794ns route)
+                                                       (18.8% logic, 81.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.369ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_count_q_3 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_9 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      5.878ns (Levels of Logic = 3)
+  Clock Path Skew:      0.024ns (0.778 - 0.754)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_count_q_3 to hdmi/dvi/enc_green/M_dout_q_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X2Y21.CQ       Tcko                  0.476   hdmi/dvi/enc_green/M_count_q[3]
+                                                       hdmi/dvi/enc_green/M_count_q_3
+    SLICE_X1Y21.D6       net (fanout=13)       0.408   hdmi/dvi/enc_green/M_count_q[3]
+    SLICE_X1Y21.D        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip_SW0
+    SLICE_X1Y21.C5       net (fanout=2)        0.412   hdmi/dvi/enc_green/N16
+    SLICE_X1Y21.C        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y49.B2      net (fanout=14)       3.715   hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y49.CLK     Tas                   0.349   hdmi/dvi/M_enc_green_data_out[9]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d101
+                                                       hdmi/dvi/enc_green/M_dout_q_9
+    -------------------------------------------------  ---------------------------
+    Total                                      5.878ns (1.343ns logic, 4.535ns route)
+                                                       (22.8% logic, 77.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.431ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_num_ones9_q_3 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_9 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      5.832ns (Levels of Logic = 2)
+  Clock Path Skew:      0.040ns (0.778 - 0.738)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_num_ones9_q_3 to hdmi/dvi/enc_green/M_dout_q_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y21.DQ      Tcko                  0.476   hdmi/dvi/enc_green/M_num_ones9_q[3]
+                                                       hdmi/dvi/enc_green/M_num_ones9_q_3
+    SLICE_X3Y22.B4       net (fanout=11)       1.758   hdmi/dvi/enc_green/M_num_ones9_q[3]
+    SLICE_X3Y22.B        Tilo                  0.259   hdmi/dvi/enc_green/flip
+                                                       hdmi/dvi/enc_green/flip1
+    SLICE_X10Y49.B5      net (fanout=13)       2.990   hdmi/dvi/enc_green/flip
+    SLICE_X10Y49.CLK     Tas                   0.349   hdmi/dvi/M_enc_green_data_out[9]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d101
+                                                       hdmi/dvi/enc_green/M_dout_q_9
+    -------------------------------------------------  ---------------------------
+    Total                                      5.832ns (1.084ns logic, 4.748ns route)
+                                                       (18.6% logic, 81.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.477ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_num_ones9_q_0 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_2 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      5.720ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.026ns (0.709 - 0.735)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_num_ones9_q_0 to hdmi/dvi/enc_green/M_dout_q_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y22.DQ      Tcko                  0.476   hdmi/dvi/enc_green/M_num_ones9_q[0]
+                                                       hdmi/dvi/enc_green/M_num_ones9_q_0
+    SLICE_X1Y21.C3       net (fanout=18)       1.758   hdmi/dvi/enc_green/M_num_ones9_q[0]
+    SLICE_X1Y21.C        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip
+    SLICE_X11Y37.C2      net (fanout=14)       2.854   hdmi/dvi/enc_green/cond_flip
+    SLICE_X11Y37.CLK     Tas                   0.373   hdmi/dvi/M_enc_green_data_out[3]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d31
+                                                       hdmi/dvi/enc_green/M_dout_q_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.720ns (1.108ns logic, 4.612ns route)
+                                                       (19.4% logic, 80.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.477ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_num_ones9_q_1 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_2 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      5.717ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.029ns (0.709 - 0.738)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_num_ones9_q_1 to hdmi/dvi/enc_green/M_dout_q_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y21.AQ      Tcko                  0.476   hdmi/dvi/enc_green/M_num_ones9_q[3]
+                                                       hdmi/dvi/enc_green/M_num_ones9_q_1
+    SLICE_X1Y21.C4       net (fanout=20)       1.755   hdmi/dvi/enc_green/M_num_ones9_q[1]
+    SLICE_X1Y21.C        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip
+    SLICE_X11Y37.C2      net (fanout=14)       2.854   hdmi/dvi/enc_green/cond_flip
+    SLICE_X11Y37.CLK     Tas                   0.373   hdmi/dvi/M_enc_green_data_out[3]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d31
+                                                       hdmi/dvi/enc_green/M_dout_q_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.717ns (1.108ns logic, 4.609ns route)
+                                                       (19.4% logic, 80.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.645ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_num_ones9_q_3 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_2 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      5.549ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.029ns (0.709 - 0.738)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_num_ones9_q_3 to hdmi/dvi/enc_green/M_dout_q_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y21.DQ      Tcko                  0.476   hdmi/dvi/enc_green/M_num_ones9_q[3]
+                                                       hdmi/dvi/enc_green/M_num_ones9_q_3
+    SLICE_X1Y21.C6       net (fanout=11)       1.587   hdmi/dvi/enc_green/M_num_ones9_q[3]
+    SLICE_X1Y21.C        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip
+    SLICE_X11Y37.C2      net (fanout=14)       2.854   hdmi/dvi/enc_green/cond_flip
+    SLICE_X11Y37.CLK     Tas                   0.373   hdmi/dvi/M_enc_green_data_out[3]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d31
+                                                       hdmi/dvi/enc_green/M_dout_q_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.549ns (1.108ns logic, 4.441ns route)
+                                                       (20.0% logic, 80.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.666ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_num_ones9_q_1 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_9 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      5.597ns (Levels of Logic = 2)
+  Clock Path Skew:      0.040ns (0.778 - 0.738)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_num_ones9_q_1 to hdmi/dvi/enc_green/M_dout_q_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y21.AQ      Tcko                  0.476   hdmi/dvi/enc_green/M_num_ones9_q[3]
+                                                       hdmi/dvi/enc_green/M_num_ones9_q_1
+    SLICE_X3Y22.B6       net (fanout=20)       1.523   hdmi/dvi/enc_green/M_num_ones9_q[1]
+    SLICE_X3Y22.B        Tilo                  0.259   hdmi/dvi/enc_green/flip
+                                                       hdmi/dvi/enc_green/flip1
+    SLICE_X10Y49.B5      net (fanout=13)       2.990   hdmi/dvi/enc_green/flip
+    SLICE_X10Y49.CLK     Tas                   0.349   hdmi/dvi/M_enc_green_data_out[9]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d101
+                                                       hdmi/dvi/enc_green/M_dout_q_9
+    -------------------------------------------------  ---------------------------
+    Total                                      5.597ns (1.084ns logic, 4.513ns route)
+                                                       (19.4% logic, 80.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.691ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/M_ctrX_q_8 (FF)
+  Destination:          hdmi/M_ctrY_q_2 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      5.488ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.044ns (0.679 - 0.723)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/M_ctrX_q_8 to hdmi/M_ctrY_q_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X20Y33.AQ      Tcko                  0.525   hdmi/M_ctrX_q[10]
+                                                       hdmi/M_ctrX_q_8
+    SLICE_X18Y31.B2      net (fanout=4)        1.208   hdmi/M_ctrX_q[8]
+    SLICE_X18Y31.B       Tilo                  0.235   hdmi/dvi/M_de_pipe_q_1
+                                                       hdmi/GND_6_o_GND_6_o_equal_4_o<10>_SW0
+    SLICE_X18Y31.A3      net (fanout=2)        0.475   hdmi/N8
+    SLICE_X18Y31.A       Tilo                  0.235   hdmi/dvi/M_de_pipe_q_1
+                                                       hdmi/GND_6_o_GND_6_o_equal_4_o<10>_1
+    SLICE_X19Y24.C3      net (fanout=1)        0.990   hdmi/GND_6_o_GND_6_o_equal_4_o[10]
+    SLICE_X19Y24.C       Tilo                  0.259   hdmi/M_ctrY_q[9]
+                                                       hdmi/_n0061
+    SLICE_X19Y22.C2      net (fanout=10)       1.188   hdmi/_n0061
+    SLICE_X19Y22.CLK     Tas                   0.373   M_hdmi_y[3]
+                                                       hdmi/M_ctrY_q_2_rstpot
+                                                       hdmi/M_ctrY_q_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.488ns (1.627ns logic, 3.861ns route)
+                                                       (29.6% logic, 70.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.716ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_blue/M_de_pipe_q_1 (FF)
+  Destination:          hdmi/dvi/enc_green/M_count_q_3 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      5.518ns (Levels of Logic = 1)
+  Clock Path Skew:      0.011ns (0.637 - 0.626)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_blue/M_de_pipe_q_1 to hdmi/dvi/enc_green/M_count_q_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y31.AQ      Tcko                  0.476   hdmi/dvi/M_de_pipe_q_1
+                                                       hdmi/dvi/enc_blue/M_de_pipe_q_1
+    SLICE_X2Y21.D2       net (fanout=45)       4.610   hdmi/dvi/M_de_pipe_q_1
+    SLICE_X2Y21.CLK      Tas                   0.432   hdmi/dvi/enc_green/M_count_q[3]
+                                                       hdmi/dvi/enc_green/Mmux_M_count_d83_F
+                                                       hdmi/dvi/enc_green/Mmux_M_count_d83
+                                                       hdmi/dvi/enc_green/M_count_q_3
+    -------------------------------------------------  ---------------------------
+    Total                                      5.518ns (0.908ns logic, 4.610ns route)
+                                                       (16.5% logic, 83.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.718ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_count_q_1 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_9 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      5.527ns (Levels of Logic = 2)
+  Clock Path Skew:      0.022ns (0.778 - 0.756)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_count_q_1 to hdmi/dvi/enc_green/M_dout_q_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y20.AQ       Tcko                  0.430   hdmi/dvi/enc_green/M_count_q[2]
+                                                       hdmi/dvi/enc_green/M_count_q_1
+    SLICE_X1Y21.C2       net (fanout=14)       0.774   hdmi/dvi/enc_green/M_count_q[1]
+    SLICE_X1Y21.C        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y49.B2      net (fanout=14)       3.715   hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y49.CLK     Tas                   0.349   hdmi/dvi/M_enc_green_data_out[9]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d101
+                                                       hdmi/dvi/enc_green/M_dout_q_9
+    -------------------------------------------------  ---------------------------
+    Total                                      5.527ns (1.038ns logic, 4.489ns route)
+                                                       (18.8% logic, 81.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.729ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_num_ones9_q_2 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_0 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      5.465ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.029ns (0.709 - 0.738)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_num_ones9_q_2 to hdmi/dvi/enc_green/M_dout_q_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y21.BQ      Tcko                  0.476   hdmi/dvi/enc_green/M_num_ones9_q[3]
+                                                       hdmi/dvi/enc_green/M_num_ones9_q_2
+    SLICE_X1Y21.C1       net (fanout=18)       1.940   hdmi/dvi/enc_green/M_num_ones9_q[2]
+    SLICE_X1Y21.C        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip
+    SLICE_X11Y37.A4      net (fanout=14)       2.417   hdmi/dvi/enc_green/cond_flip
+    SLICE_X11Y37.CLK     Tas                   0.373   hdmi/dvi/M_enc_green_data_out[3]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d12
+                                                       hdmi/dvi/enc_green/M_dout_q_0
+    -------------------------------------------------  ---------------------------
+    Total                                      5.465ns (1.108ns logic, 4.357ns route)
+                                                       (20.3% logic, 79.7% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.737ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_blue/M_de_pipe_q_1 (FF)
+  Destination:          hdmi/dvi/enc_red/M_count_q_3 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      5.523ns (Levels of Logic = 1)
+  Clock Path Skew:      0.037ns (0.756 - 0.719)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_blue/M_de_pipe_q_1 to hdmi/dvi/enc_red/M_count_q_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y31.AQ      Tcko                  0.476   hdmi/dvi/M_de_pipe_q_1
+                                                       hdmi/dvi/enc_blue/M_de_pipe_q_1
+    SLICE_X22Y49.C2      net (fanout=45)       4.614   hdmi/dvi/M_de_pipe_q_1
+    SLICE_X22Y49.CLK     Tas                   0.433   hdmi/dvi/enc_red/M_count_q[3]
+                                                       hdmi/dvi/enc_red/Mmux_M_count_d83_G
+                                                       hdmi/dvi/enc_red/Mmux_M_count_d83
+                                                       hdmi/dvi/enc_red/M_count_q_3
+    -------------------------------------------------  ---------------------------
+    Total                                      5.523ns (0.909ns logic, 4.614ns route)
+                                                       (16.5% logic, 83.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.764ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_num_ones9_q_2 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_4 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      5.434ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.025ns (0.713 - 0.738)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_num_ones9_q_2 to hdmi/dvi/enc_green/M_dout_q_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y21.BQ      Tcko                  0.476   hdmi/dvi/enc_green/M_num_ones9_q[3]
+                                                       hdmi/dvi/enc_green/M_num_ones9_q_2
+    SLICE_X1Y21.C1       net (fanout=18)       1.940   hdmi/dvi/enc_green/M_num_ones9_q[2]
+    SLICE_X1Y21.C        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y35.A1      net (fanout=14)       2.410   hdmi/dvi/enc_green/cond_flip
+    SLICE_X10Y35.CLK     Tas                   0.349   hdmi/dvi/M_enc_green_data_out[7]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d51
+                                                       hdmi/dvi/enc_green/M_dout_q_4
+    -------------------------------------------------  ---------------------------
+    Total                                      5.434ns (1.084ns logic, 4.350ns route)
+                                                       (19.9% logic, 80.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.769ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_blue/M_de_pipe_q_1 (FF)
+  Destination:          hdmi/dvi/enc_green/M_count_q_2 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      5.467ns (Levels of Logic = 1)
+  Clock Path Skew:      0.013ns (0.639 - 0.626)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_blue/M_de_pipe_q_1 to hdmi/dvi/enc_green/M_count_q_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y31.AQ      Tcko                  0.476   hdmi/dvi/M_de_pipe_q_1
+                                                       hdmi/dvi/enc_blue/M_de_pipe_q_1
+    SLICE_X1Y20.C1       net (fanout=45)       4.618   hdmi/dvi/M_de_pipe_q_1
+    SLICE_X1Y20.CLK      Tas                   0.373   hdmi/dvi/enc_green/M_count_q[2]
+                                                       hdmi/dvi/enc_green/Mmux_M_count_d64
+                                                       hdmi/dvi/enc_green/M_count_q_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.467ns (0.849ns logic, 4.618ns route)
+                                                       (15.5% logic, 84.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.792ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_num_ones9_q_2 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_1 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      5.402ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.029ns (0.709 - 0.738)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_num_ones9_q_2 to hdmi/dvi/enc_green/M_dout_q_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y21.BQ      Tcko                  0.476   hdmi/dvi/enc_green/M_num_ones9_q[3]
+                                                       hdmi/dvi/enc_green/M_num_ones9_q_2
+    SLICE_X1Y21.C1       net (fanout=18)       1.940   hdmi/dvi/enc_green/M_num_ones9_q[2]
+    SLICE_X1Y21.C        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip
+    SLICE_X11Y37.B5      net (fanout=14)       2.354   hdmi/dvi/enc_green/cond_flip
+    SLICE_X11Y37.CLK     Tas                   0.373   hdmi/dvi/M_enc_green_data_out[3]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d21
+                                                       hdmi/dvi/enc_green/M_dout_q_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.402ns (1.108ns logic, 4.294ns route)
+                                                       (20.5% logic, 79.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.793ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/enc_green/M_num_ones9_q_2 (FF)
+  Destination:          hdmi/dvi/enc_green/M_dout_q_3 (FF)
+  Requirement:          13.333ns
+  Data Path Delay:      5.401ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.029ns (0.709 - 0.738)
+  Source Clock:         hdmi/M_pclk_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclk_buf_O rising at 13.333ns
+  Clock Uncertainty:    0.110ns
+
+  Clock Uncertainty:          0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.207ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/enc_green/M_num_ones9_q_2 to hdmi/dvi/enc_green/M_dout_q_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y21.BQ      Tcko                  0.476   hdmi/dvi/enc_green/M_num_ones9_q[3]
+                                                       hdmi/dvi/enc_green/M_num_ones9_q_2
+    SLICE_X1Y21.C1       net (fanout=18)       1.940   hdmi/dvi/enc_green/M_num_ones9_q[2]
+    SLICE_X1Y21.C        Tilo                  0.259   hdmi/dvi/enc_green/N16
+                                                       hdmi/dvi/enc_green/cond_flip
+    SLICE_X11Y37.D5      net (fanout=14)       2.353   hdmi/dvi/enc_green/cond_flip
+    SLICE_X11Y37.CLK     Tas                   0.373   hdmi/dvi/M_enc_green_data_out[3]
+                                                       hdmi/dvi/enc_green/Mmux_M_dout_d41
+                                                       hdmi/dvi/enc_green/M_dout_q_3
+    -------------------------------------------------  ---------------------------
+    Total                                      5.401ns (1.108ns logic, 4.293ns route)
+                                                       (20.5% logic, 79.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_hdmi_M_pll_oserdes_CLKOUT1 = PERIOD TIMEGRP "hdmi_M_pll_oserdes_CLKOUT1"
+        TS_clk_wiz_clkfx HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 10.667ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: hdmi/pclk_buf/I0
+  Logical resource: hdmi/pclk_buf/I0
+  Location pin: BUFGMUX_X2Y2.I0
+  Clock network: hdmi/M_pll_oserdes_CLKOUT1
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[23]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMA/CLK
+  Location pin: SLICE_X8Y49.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[23]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMA_D1/CLK
+  Location pin: SLICE_X8Y49.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[23]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMB/CLK
+  Location pin: SLICE_X8Y49.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[23]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMB_D1/CLK
+  Location pin: SLICE_X8Y49.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[23]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMC/CLK
+  Location pin: SLICE_X8Y49.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[23]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMC_D1/CLK
+  Location pin: SLICE_X8Y49.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[23]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMD/CLK
+  Location pin: SLICE_X8Y49.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[23]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMD_D1/CLK
+  Location pin: SLICE_X8Y49.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[5]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMA/CLK
+  Location pin: SLICE_X12Y47.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[5]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMA_D1/CLK
+  Location pin: SLICE_X12Y47.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[5]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMB/CLK
+  Location pin: SLICE_X12Y47.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[5]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMB_D1/CLK
+  Location pin: SLICE_X12Y47.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[5]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMC/CLK
+  Location pin: SLICE_X12Y47.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[5]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMC_D1/CLK
+  Location pin: SLICE_X12Y47.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[5]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMD/CLK
+  Location pin: SLICE_X12Y47.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[5]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMD_D1/CLK
+  Location pin: SLICE_X12Y47.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[11]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMA/CLK
+  Location pin: SLICE_X12Y48.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[11]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMA_D1/CLK
+  Location pin: SLICE_X12Y48.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[11]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMB/CLK
+  Location pin: SLICE_X12Y48.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[11]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMB_D1/CLK
+  Location pin: SLICE_X12Y48.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[11]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMC/CLK
+  Location pin: SLICE_X12Y48.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[11]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMC_D1/CLK
+  Location pin: SLICE_X12Y48.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[11]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMD/CLK
+  Location pin: SLICE_X12Y48.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[11]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMD_D1/CLK
+  Location pin: SLICE_X12Y48.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[17]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMA/CLK
+  Location pin: SLICE_X12Y51.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[17]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMA_D1/CLK
+  Location pin: SLICE_X12Y51.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[17]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMB/CLK
+  Location pin: SLICE_X12Y51.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[17]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMB_D1/CLK
+  Location pin: SLICE_X12Y51.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+Slack: 12.076ns (period - min period limit)
+  Period: 13.333ns
+  Min period limit: 1.257ns (795.545MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/ram/_n0009[17]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMC/CLK
+  Location pin: SLICE_X12Y51.CLK
+  Clock network: hdmi/M_pclk_buf_O
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_hdmi_M_pll_oserdes_CLKOUT0 = PERIOD TIMEGRP 
+"hdmi_M_pll_oserdes_CLKOUT0"         TS_clk_wiz_clkfx * 10 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_hdmi_M_pll_oserdes_CLKOUT2 = PERIOD TIMEGRP 
+"hdmi_M_pll_oserdes_CLKOUT2"         TS_clk_wiz_clkfx * 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 3594 paths analyzed, 212 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.073ns.
+--------------------------------------------------------------------------------
+Slack:                  0.593ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_rsync_q_6 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_4 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.964ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.011ns (0.297 - 0.308)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_rsync_q_6 to hdmi/dvi/fifo/fifo/ram/read_data_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y52.AQ      Tcko                  0.430   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+                                                       hdmi/dvi/fifo/fifo/M_rsync_q_6
+    SLICE_X15Y52.A1      net (fanout=7)        0.784   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y47.C1      net (fanout=15)       1.393   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y47.CMUX    Tilo                  0.326   hdmi/dvi/fifo/fifo/ram/_n0009[5]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMC
+    SLICE_X13Y48.A3      net (fanout=1)        0.567   hdmi/dvi/fifo/fifo/ram/_n0009[4]
+    SLICE_X13Y48.CLK     Tas                   0.264   hdmi/dvi/fifo/M_fifo_dout[3]
+                                                       hdmi/dvi/fifo/fifo/ram/_n0009[4]_rt
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_4
+    -------------------------------------------------  ---------------------------
+    Total                                      5.964ns (1.870ns logic, 4.094ns route)
+                                                       (31.4% logic, 68.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.594ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_2 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_4 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.961ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.013ns (0.297 - 0.310)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_2 to hdmi/dvi/fifo/fifo/ram/read_data_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y51.AQ      Tcko                  0.476   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_2
+    SLICE_X15Y52.A4      net (fanout=10)       0.735   hdmi/dvi/fifo/fifo/M_raddr_q[2]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y47.C1      net (fanout=15)       1.393   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y47.CMUX    Tilo                  0.326   hdmi/dvi/fifo/fifo/ram/_n0009[5]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMC
+    SLICE_X13Y48.A3      net (fanout=1)        0.567   hdmi/dvi/fifo/fifo/ram/_n0009[4]
+    SLICE_X13Y48.CLK     Tas                   0.264   hdmi/dvi/fifo/M_fifo_dout[3]
+                                                       hdmi/dvi/fifo/fifo/ram/_n0009[4]_rt
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_4
+    -------------------------------------------------  ---------------------------
+    Total                                      5.961ns (1.916ns logic, 4.045ns route)
+                                                       (32.1% logic, 67.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.614ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_rsync_q_6 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_13 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.934ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.020ns (0.288 - 0.308)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_rsync_q_6 to hdmi/dvi/fifo/fifo/ram/read_data_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y52.AQ      Tcko                  0.430   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+                                                       hdmi/dvi/fifo/fifo/M_rsync_q_6
+    SLICE_X15Y52.A1      net (fanout=7)        0.784   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y51.A1      net (fanout=15)       0.866   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y51.A       Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[17]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMA_D1
+    SLICE_X13Y53.BX      net (fanout=1)        1.286   hdmi/dvi/fifo/fifo/ram/_n0009[13]
+    SLICE_X13Y53.CLK     Tdick                 0.114   hdmi/dvi/fifo/M_fifo_dout[15]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_13
+    -------------------------------------------------  ---------------------------
+    Total                                      5.934ns (1.648ns logic, 4.286ns route)
+                                                       (27.8% logic, 72.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.615ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_2 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_13 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.931ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.022ns (0.288 - 0.310)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_2 to hdmi/dvi/fifo/fifo/ram/read_data_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y51.AQ      Tcko                  0.476   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_2
+    SLICE_X15Y52.A4      net (fanout=10)       0.735   hdmi/dvi/fifo/fifo/M_raddr_q[2]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y51.A1      net (fanout=15)       0.866   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y51.A       Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[17]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMA_D1
+    SLICE_X13Y53.BX      net (fanout=1)        1.286   hdmi/dvi/fifo/fifo/ram/_n0009[13]
+    SLICE_X13Y53.CLK     Tdick                 0.114   hdmi/dvi/fifo/M_fifo_dout[15]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_13
+    -------------------------------------------------  ---------------------------
+    Total                                      5.931ns (1.694ns logic, 4.237ns route)
+                                                       (28.6% logic, 71.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.649ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_rsync_q_6 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_22 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.928ns (Levels of Logic = 4)
+  Clock Path Skew:      0.009ns (0.691 - 0.682)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_rsync_q_6 to hdmi/dvi/fifo/fifo/ram/read_data_22
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y52.AQ      Tcko                  0.430   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+                                                       hdmi/dvi/fifo/fifo/M_rsync_q_6
+    SLICE_X15Y52.A1      net (fanout=7)        0.784   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X14Y51.B5      net (fanout=4)        0.442   hdmi/dvi/fifo/fifo/empty
+    SLICE_X14Y51.B       Tilo                  0.235   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/Mcount_M_raddr_q_xor<3>11
+    SLICE_X8Y49.C4       net (fanout=15)       1.704   hdmi/dvi/fifo/fifo/M_ram_raddr[3]
+    SLICE_X8Y49.CMUX     Tilo                  0.326   hdmi/dvi/fifo/fifo/ram/_n0009[23]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMC
+    SLICE_X8Y50.CX       net (fanout=1)        0.508   hdmi/dvi/fifo/fifo/ram/_n0009[22]
+    SLICE_X8Y50.CLK      Tdick                 0.085   hdmi/dvi/fifo/M_fifo_dout[19]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_22
+    -------------------------------------------------  ---------------------------
+    Total                                      5.928ns (1.672ns logic, 4.256ns route)
+                                                       (28.2% logic, 71.8% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.649ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_rsync_q_6 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_1 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.908ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.011ns (0.297 - 0.308)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_rsync_q_6 to hdmi/dvi/fifo/fifo/ram/read_data_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y52.AQ      Tcko                  0.430   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+                                                       hdmi/dvi/fifo/fifo/M_rsync_q_6
+    SLICE_X15Y52.A1      net (fanout=7)        0.784   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y47.A1      net (fanout=15)       1.236   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y47.A       Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[5]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMA_D1
+    SLICE_X13Y48.BX      net (fanout=1)        0.890   hdmi/dvi/fifo/fifo/ram/_n0009[1]
+    SLICE_X13Y48.CLK     Tdick                 0.114   hdmi/dvi/fifo/M_fifo_dout[3]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.908ns (1.648ns logic, 4.260ns route)
+                                                       (27.9% logic, 72.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.649ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_1 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_4 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.914ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.005ns (0.197 - 0.202)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_1 to hdmi/dvi/fifo/fifo/ram/read_data_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y52.BQ      Tcko                  0.525   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_1
+    SLICE_X12Y52.C2      net (fanout=9)        1.764   hdmi/dvi/fifo/M_raddr_q_1
+    SLICE_X12Y52.C       Tilo                  0.255   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1_SW0
+    SLICE_X12Y52.A1      net (fanout=1)        0.566   hdmi/dvi/fifo/fifo/N178
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y47.C1      net (fanout=15)       1.393   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y47.CMUX    Tilo                  0.326   hdmi/dvi/fifo/fifo/ram/_n0009[5]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMC
+    SLICE_X13Y48.A3      net (fanout=1)        0.567   hdmi/dvi/fifo/fifo/ram/_n0009[4]
+    SLICE_X13Y48.CLK     Tas                   0.264   hdmi/dvi/fifo/M_fifo_dout[3]
+                                                       hdmi/dvi/fifo/fifo/ram/_n0009[4]_rt
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_4
+    -------------------------------------------------  ---------------------------
+    Total                                      5.914ns (1.624ns logic, 4.290ns route)
+                                                       (27.5% logic, 72.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.650ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_2 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_1 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.905ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.013ns (0.297 - 0.310)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_2 to hdmi/dvi/fifo/fifo/ram/read_data_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y51.AQ      Tcko                  0.476   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_2
+    SLICE_X15Y52.A4      net (fanout=10)       0.735   hdmi/dvi/fifo/fifo/M_raddr_q[2]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y47.A1      net (fanout=15)       1.236   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y47.A       Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[5]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMA_D1
+    SLICE_X13Y48.BX      net (fanout=1)        0.890   hdmi/dvi/fifo/fifo/ram/_n0009[1]
+    SLICE_X13Y48.CLK     Tdick                 0.114   hdmi/dvi/fifo/M_fifo_dout[3]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.905ns (1.694ns logic, 4.211ns route)
+                                                       (28.7% logic, 71.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.650ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_2 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_22 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.925ns (Levels of Logic = 4)
+  Clock Path Skew:      0.007ns (0.691 - 0.684)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_2 to hdmi/dvi/fifo/fifo/ram/read_data_22
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y51.AQ      Tcko                  0.476   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_2
+    SLICE_X15Y52.A4      net (fanout=10)       0.735   hdmi/dvi/fifo/fifo/M_raddr_q[2]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X14Y51.B5      net (fanout=4)        0.442   hdmi/dvi/fifo/fifo/empty
+    SLICE_X14Y51.B       Tilo                  0.235   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/Mcount_M_raddr_q_xor<3>11
+    SLICE_X8Y49.C4       net (fanout=15)       1.704   hdmi/dvi/fifo/fifo/M_ram_raddr[3]
+    SLICE_X8Y49.CMUX     Tilo                  0.326   hdmi/dvi/fifo/fifo/ram/_n0009[23]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMC
+    SLICE_X8Y50.CX       net (fanout=1)        0.508   hdmi/dvi/fifo/fifo/ram/_n0009[22]
+    SLICE_X8Y50.CLK      Tdick                 0.085   hdmi/dvi/fifo/M_fifo_dout[19]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_22
+    -------------------------------------------------  ---------------------------
+    Total                                      5.925ns (1.718ns logic, 4.207ns route)
+                                                       (29.0% logic, 71.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.670ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_rsync_q_6 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_20 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.909ns (Levels of Logic = 4)
+  Clock Path Skew:      0.011ns (0.693 - 0.682)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_rsync_q_6 to hdmi/dvi/fifo/fifo/ram/read_data_20
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y52.AQ      Tcko                  0.430   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+                                                       hdmi/dvi/fifo/fifo/M_rsync_q_6
+    SLICE_X15Y52.A1      net (fanout=7)        0.784   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X14Y51.B5      net (fanout=4)        0.442   hdmi/dvi/fifo/fifo/empty
+    SLICE_X14Y51.B       Tilo                  0.235   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/Mcount_M_raddr_q_xor<3>11
+    SLICE_X8Y49.B4       net (fanout=15)       1.683   hdmi/dvi/fifo/fifo/M_ram_raddr[3]
+    SLICE_X8Y49.BMUX     Tilo                  0.326   hdmi/dvi/fifo/fifo/ram/_n0009[23]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMB
+    SLICE_X8Y48.AX       net (fanout=1)        0.510   hdmi/dvi/fifo/fifo/ram/_n0009[20]
+    SLICE_X8Y48.CLK      Tdick                 0.085   hdmi/dvi/fifo/M_fifo_dout[20]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_20
+    -------------------------------------------------  ---------------------------
+    Total                                      5.909ns (1.672ns logic, 4.237ns route)
+                                                       (28.3% logic, 71.7% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.670ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_1 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_13 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.884ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.014ns (0.188 - 0.202)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_1 to hdmi/dvi/fifo/fifo/ram/read_data_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y52.BQ      Tcko                  0.525   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_1
+    SLICE_X12Y52.C2      net (fanout=9)        1.764   hdmi/dvi/fifo/M_raddr_q_1
+    SLICE_X12Y52.C       Tilo                  0.255   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1_SW0
+    SLICE_X12Y52.A1      net (fanout=1)        0.566   hdmi/dvi/fifo/fifo/N178
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y51.A1      net (fanout=15)       0.866   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y51.A       Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[17]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMA_D1
+    SLICE_X13Y53.BX      net (fanout=1)        1.286   hdmi/dvi/fifo/fifo/ram/_n0009[13]
+    SLICE_X13Y53.CLK     Tdick                 0.114   hdmi/dvi/fifo/M_fifo_dout[15]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_13
+    -------------------------------------------------  ---------------------------
+    Total                                      5.884ns (1.402ns logic, 4.482ns route)
+                                                       (23.8% logic, 76.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.671ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_2 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_20 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.906ns (Levels of Logic = 4)
+  Clock Path Skew:      0.009ns (0.693 - 0.684)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_2 to hdmi/dvi/fifo/fifo/ram/read_data_20
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y51.AQ      Tcko                  0.476   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_2
+    SLICE_X15Y52.A4      net (fanout=10)       0.735   hdmi/dvi/fifo/fifo/M_raddr_q[2]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X14Y51.B5      net (fanout=4)        0.442   hdmi/dvi/fifo/fifo/empty
+    SLICE_X14Y51.B       Tilo                  0.235   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/Mcount_M_raddr_q_xor<3>11
+    SLICE_X8Y49.B4       net (fanout=15)       1.683   hdmi/dvi/fifo/fifo/M_ram_raddr[3]
+    SLICE_X8Y49.BMUX     Tilo                  0.326   hdmi/dvi/fifo/fifo/ram/_n0009[23]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMB
+    SLICE_X8Y48.AX       net (fanout=1)        0.510   hdmi/dvi/fifo/fifo/ram/_n0009[20]
+    SLICE_X8Y48.CLK      Tdick                 0.085   hdmi/dvi/fifo/M_fifo_dout[20]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_20
+    -------------------------------------------------  ---------------------------
+    Total                                      5.906ns (1.718ns logic, 4.188ns route)
+                                                       (29.1% logic, 70.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.677ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_rsync_q_5 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_4 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.880ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.011ns (0.297 - 0.308)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_rsync_q_5 to hdmi/dvi/fifo/fifo/ram/read_data_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y52.AQ      Tcko                  0.525   hdmi/dvi/fifo/fifo/M_rsync_q[5]
+                                                       hdmi/dvi/fifo/fifo/M_rsync_q_5
+    SLICE_X15Y52.A3      net (fanout=7)        0.605   hdmi/dvi/fifo/fifo/M_rsync_q[5]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y47.C1      net (fanout=15)       1.393   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y47.CMUX    Tilo                  0.326   hdmi/dvi/fifo/fifo/ram/_n0009[5]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMC
+    SLICE_X13Y48.A3      net (fanout=1)        0.567   hdmi/dvi/fifo/fifo/ram/_n0009[4]
+    SLICE_X13Y48.CLK     Tas                   0.264   hdmi/dvi/fifo/M_fifo_dout[3]
+                                                       hdmi/dvi/fifo/fifo/ram/_n0009[4]_rt
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_4
+    -------------------------------------------------  ---------------------------
+    Total                                      5.880ns (1.965ns logic, 3.915ns route)
+                                                       (33.4% logic, 66.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.686ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_rsync_q_5 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_4 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.871ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.011ns (0.297 - 0.308)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_rsync_q_5 to hdmi/dvi/fifo/fifo/ram/read_data_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y52.AQ      Tcko                  0.525   hdmi/dvi/fifo/fifo/M_rsync_q[5]
+                                                       hdmi/dvi/fifo/fifo/M_rsync_q_5
+    SLICE_X13Y52.A5      net (fanout=7)        0.960   hdmi/dvi/fifo/fifo/M_rsync_q[5]
+    SLICE_X13Y52.A       Tilo                  0.259   hdmi/dvi/fifo/M_fifo_rget1_cepot
+                                                       hdmi/dvi/fifo/fifo/empty42
+    SLICE_X15Y52.B5      net (fanout=3)        0.454   hdmi/dvi/fifo/empty41
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y47.C1      net (fanout=15)       1.393   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y47.CMUX    Tilo                  0.326   hdmi/dvi/fifo/fifo/ram/_n0009[5]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMC
+    SLICE_X13Y48.A3      net (fanout=1)        0.567   hdmi/dvi/fifo/fifo/ram/_n0009[4]
+    SLICE_X13Y48.CLK     Tas                   0.264   hdmi/dvi/fifo/M_fifo_dout[3]
+                                                       hdmi/dvi/fifo/fifo/ram/_n0009[4]_rt
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_4
+    -------------------------------------------------  ---------------------------
+    Total                                      5.871ns (1.965ns logic, 3.906ns route)
+                                                       (33.5% logic, 66.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.698ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_rsync_q_5 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_13 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.850ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.020ns (0.288 - 0.308)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_rsync_q_5 to hdmi/dvi/fifo/fifo/ram/read_data_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y52.AQ      Tcko                  0.525   hdmi/dvi/fifo/fifo/M_rsync_q[5]
+                                                       hdmi/dvi/fifo/fifo/M_rsync_q_5
+    SLICE_X15Y52.A3      net (fanout=7)        0.605   hdmi/dvi/fifo/fifo/M_rsync_q[5]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y51.A1      net (fanout=15)       0.866   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y51.A       Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[17]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMA_D1
+    SLICE_X13Y53.BX      net (fanout=1)        1.286   hdmi/dvi/fifo/fifo/ram/_n0009[13]
+    SLICE_X13Y53.CLK     Tdick                 0.114   hdmi/dvi/fifo/M_fifo_dout[15]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_13
+    -------------------------------------------------  ---------------------------
+    Total                                      5.850ns (1.743ns logic, 4.107ns route)
+                                                       (29.8% logic, 70.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.702ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_rsync_q_6 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_19 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.875ns (Levels of Logic = 4)
+  Clock Path Skew:      0.009ns (0.691 - 0.682)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_rsync_q_6 to hdmi/dvi/fifo/fifo/ram/read_data_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y52.AQ      Tcko                  0.430   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+                                                       hdmi/dvi/fifo/fifo/M_rsync_q_6
+    SLICE_X15Y52.A1      net (fanout=7)        0.784   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X8Y49.A1       net (fanout=15)       1.198   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X8Y49.A        Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[23]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMA_D1
+    SLICE_X8Y50.DX       net (fanout=1)        0.924   hdmi/dvi/fifo/fifo/ram/_n0009[19]
+    SLICE_X8Y50.CLK      Tdick                 0.085   hdmi/dvi/fifo/M_fifo_dout[19]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_19
+    -------------------------------------------------  ---------------------------
+    Total                                      5.875ns (1.619ns logic, 4.256ns route)
+                                                       (27.6% logic, 72.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.703ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_2 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_19 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.872ns (Levels of Logic = 4)
+  Clock Path Skew:      0.007ns (0.691 - 0.684)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_2 to hdmi/dvi/fifo/fifo/ram/read_data_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y51.AQ      Tcko                  0.476   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_2
+    SLICE_X15Y52.A4      net (fanout=10)       0.735   hdmi/dvi/fifo/fifo/M_raddr_q[2]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X8Y49.A1       net (fanout=15)       1.198   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X8Y49.A        Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[23]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMA_D1
+    SLICE_X8Y50.DX       net (fanout=1)        0.924   hdmi/dvi/fifo/fifo/ram/_n0009[19]
+    SLICE_X8Y50.CLK      Tdick                 0.085   hdmi/dvi/fifo/M_fifo_dout[19]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_19
+    -------------------------------------------------  ---------------------------
+    Total                                      5.872ns (1.665ns logic, 4.207ns route)
+                                                       (28.4% logic, 71.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.705ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_rsync_q_6 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_8 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.851ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.012ns (0.296 - 0.308)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_rsync_q_6 to hdmi/dvi/fifo/fifo/ram/read_data_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y52.AQ      Tcko                  0.430   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+                                                       hdmi/dvi/fifo/fifo/M_rsync_q_6
+    SLICE_X15Y52.A1      net (fanout=7)        0.784   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y48.B1      net (fanout=15)       1.245   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y48.BMUX    Tilo                  0.326   hdmi/dvi/fifo/fifo/ram/_n0009[11]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMB
+    SLICE_X12Y49.AX      net (fanout=1)        0.781   hdmi/dvi/fifo/fifo/ram/_n0009[8]
+    SLICE_X12Y49.CLK     Tdick                 0.085   hdmi/dvi/fifo/M_fifo_dout[11]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_8
+    -------------------------------------------------  ---------------------------
+    Total                                      5.851ns (1.691ns logic, 4.160ns route)
+                                                       (28.9% logic, 71.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.705ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_1 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_1 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.858ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.005ns (0.197 - 0.202)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_1 to hdmi/dvi/fifo/fifo/ram/read_data_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y52.BQ      Tcko                  0.525   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_1
+    SLICE_X12Y52.C2      net (fanout=9)        1.764   hdmi/dvi/fifo/M_raddr_q_1
+    SLICE_X12Y52.C       Tilo                  0.255   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1_SW0
+    SLICE_X12Y52.A1      net (fanout=1)        0.566   hdmi/dvi/fifo/fifo/N178
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y47.A1      net (fanout=15)       1.236   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y47.A       Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[5]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMA_D1
+    SLICE_X13Y48.BX      net (fanout=1)        0.890   hdmi/dvi/fifo/fifo/ram/_n0009[1]
+    SLICE_X13Y48.CLK     Tdick                 0.114   hdmi/dvi/fifo/M_fifo_dout[3]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.858ns (1.402ns logic, 4.456ns route)
+                                                       (23.9% logic, 76.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.706ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_2 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_8 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.848ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.014ns (0.296 - 0.310)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_2 to hdmi/dvi/fifo/fifo/ram/read_data_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y51.AQ      Tcko                  0.476   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_2
+    SLICE_X15Y52.A4      net (fanout=10)       0.735   hdmi/dvi/fifo/fifo/M_raddr_q[2]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y48.B1      net (fanout=15)       1.245   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y48.BMUX    Tilo                  0.326   hdmi/dvi/fifo/fifo/ram/_n0009[11]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem2_RAMB
+    SLICE_X12Y49.AX      net (fanout=1)        0.781   hdmi/dvi/fifo/fifo/ram/_n0009[8]
+    SLICE_X12Y49.CLK     Tdick                 0.085   hdmi/dvi/fifo/M_fifo_dout[11]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_8
+    -------------------------------------------------  ---------------------------
+    Total                                      5.848ns (1.737ns logic, 4.111ns route)
+                                                       (29.7% logic, 70.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.707ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_rsync_q_5 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_13 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.841ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.020ns (0.288 - 0.308)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_rsync_q_5 to hdmi/dvi/fifo/fifo/ram/read_data_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y52.AQ      Tcko                  0.525   hdmi/dvi/fifo/fifo/M_rsync_q[5]
+                                                       hdmi/dvi/fifo/fifo/M_rsync_q_5
+    SLICE_X13Y52.A5      net (fanout=7)        0.960   hdmi/dvi/fifo/fifo/M_rsync_q[5]
+    SLICE_X13Y52.A       Tilo                  0.259   hdmi/dvi/fifo/M_fifo_rget1_cepot
+                                                       hdmi/dvi/fifo/fifo/empty42
+    SLICE_X15Y52.B5      net (fanout=3)        0.454   hdmi/dvi/fifo/empty41
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y51.A1      net (fanout=15)       0.866   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y51.A       Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[17]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem3_RAMA_D1
+    SLICE_X13Y53.BX      net (fanout=1)        1.286   hdmi/dvi/fifo/fifo/ram/_n0009[13]
+    SLICE_X13Y53.CLK     Tdick                 0.114   hdmi/dvi/fifo/M_fifo_dout[15]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_13
+    -------------------------------------------------  ---------------------------
+    Total                                      5.841ns (1.743ns logic, 4.098ns route)
+                                                       (29.8% logic, 70.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.710ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_rsync_q_6 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_19 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.867ns (Levels of Logic = 4)
+  Clock Path Skew:      0.009ns (0.691 - 0.682)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_rsync_q_6 to hdmi/dvi/fifo/fifo/ram/read_data_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y52.AQ      Tcko                  0.430   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+                                                       hdmi/dvi/fifo/fifo/M_rsync_q_6
+    SLICE_X15Y52.A1      net (fanout=7)        0.784   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X14Y51.B5      net (fanout=4)        0.442   hdmi/dvi/fifo/fifo/empty
+    SLICE_X14Y51.B       Tilo                  0.235   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/Mcount_M_raddr_q_xor<3>11
+    SLICE_X8Y49.A4       net (fanout=15)       1.299   hdmi/dvi/fifo/fifo/M_ram_raddr[3]
+    SLICE_X8Y49.A        Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[23]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMA_D1
+    SLICE_X8Y50.DX       net (fanout=1)        0.924   hdmi/dvi/fifo/fifo/ram/_n0009[19]
+    SLICE_X8Y50.CLK      Tdick                 0.085   hdmi/dvi/fifo/M_fifo_dout[19]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_19
+    -------------------------------------------------  ---------------------------
+    Total                                      5.867ns (1.600ns logic, 4.267ns route)
+                                                       (27.3% logic, 72.7% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.711ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_2 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_19 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.864ns (Levels of Logic = 4)
+  Clock Path Skew:      0.007ns (0.691 - 0.684)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_2 to hdmi/dvi/fifo/fifo/ram/read_data_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y51.AQ      Tcko                  0.476   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_2
+    SLICE_X15Y52.A4      net (fanout=10)       0.735   hdmi/dvi/fifo/fifo/M_raddr_q[2]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X14Y51.B5      net (fanout=4)        0.442   hdmi/dvi/fifo/fifo/empty
+    SLICE_X14Y51.B       Tilo                  0.235   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/Mcount_M_raddr_q_xor<3>11
+    SLICE_X8Y49.A4       net (fanout=15)       1.299   hdmi/dvi/fifo/fifo/M_ram_raddr[3]
+    SLICE_X8Y49.A        Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[23]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMA_D1
+    SLICE_X8Y50.DX       net (fanout=1)        0.924   hdmi/dvi/fifo/fifo/ram/_n0009[19]
+    SLICE_X8Y50.CLK      Tdick                 0.085   hdmi/dvi/fifo/M_fifo_dout[19]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_19
+    -------------------------------------------------  ---------------------------
+    Total                                      5.864ns (1.646ns logic, 4.218ns route)
+                                                       (28.1% logic, 71.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.733ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_rsync_q_5 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_1 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.824ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.011ns (0.297 - 0.308)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_rsync_q_5 to hdmi/dvi/fifo/fifo/ram/read_data_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y52.AQ      Tcko                  0.525   hdmi/dvi/fifo/fifo/M_rsync_q[5]
+                                                       hdmi/dvi/fifo/fifo/M_rsync_q_5
+    SLICE_X15Y52.A3      net (fanout=7)        0.605   hdmi/dvi/fifo/fifo/M_rsync_q[5]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y47.A1      net (fanout=15)       1.236   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y47.A       Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[5]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMA_D1
+    SLICE_X13Y48.BX      net (fanout=1)        0.890   hdmi/dvi/fifo/fifo/ram/_n0009[1]
+    SLICE_X13Y48.CLK     Tdick                 0.114   hdmi/dvi/fifo/M_fifo_dout[3]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.824ns (1.743ns logic, 4.081ns route)
+                                                       (29.9% logic, 70.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.733ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_rsync_q_5 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_22 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.844ns (Levels of Logic = 4)
+  Clock Path Skew:      0.009ns (0.691 - 0.682)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_rsync_q_5 to hdmi/dvi/fifo/fifo/ram/read_data_22
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y52.AQ      Tcko                  0.525   hdmi/dvi/fifo/fifo/M_rsync_q[5]
+                                                       hdmi/dvi/fifo/fifo/M_rsync_q_5
+    SLICE_X15Y52.A3      net (fanout=7)        0.605   hdmi/dvi/fifo/fifo/M_rsync_q[5]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X14Y51.B5      net (fanout=4)        0.442   hdmi/dvi/fifo/fifo/empty
+    SLICE_X14Y51.B       Tilo                  0.235   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/Mcount_M_raddr_q_xor<3>11
+    SLICE_X8Y49.C4       net (fanout=15)       1.704   hdmi/dvi/fifo/fifo/M_ram_raddr[3]
+    SLICE_X8Y49.CMUX     Tilo                  0.326   hdmi/dvi/fifo/fifo/ram/_n0009[23]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem4_RAMC
+    SLICE_X8Y50.CX       net (fanout=1)        0.508   hdmi/dvi/fifo/fifo/ram/_n0009[22]
+    SLICE_X8Y50.CLK      Tdick                 0.085   hdmi/dvi/fifo/M_fifo_dout[19]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_22
+    -------------------------------------------------  ---------------------------
+    Total                                      5.844ns (1.767ns logic, 4.077ns route)
+                                                       (30.2% logic, 69.8% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.734ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_rsync_q_6 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_1 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.823ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.011ns (0.297 - 0.308)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_rsync_q_6 to hdmi/dvi/fifo/fifo/ram/read_data_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y52.AQ      Tcko                  0.430   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+                                                       hdmi/dvi/fifo/fifo/M_rsync_q_6
+    SLICE_X15Y52.A1      net (fanout=7)        0.784   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.B6      net (fanout=4)        0.366   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.B       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/Mcount_M_raddr_q_xor<1>11
+    SLICE_X12Y47.A2      net (fanout=15)       1.317   hdmi/dvi/fifo/fifo/M_ram_raddr[1]
+    SLICE_X12Y47.A       Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[5]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMA_D1
+    SLICE_X13Y48.BX      net (fanout=1)        0.890   hdmi/dvi/fifo/fifo/ram/_n0009[1]
+    SLICE_X13Y48.CLK     Tdick                 0.114   hdmi/dvi/fifo/M_fifo_dout[3]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.823ns (1.648ns logic, 4.175ns route)
+                                                       (28.3% logic, 71.7% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.735ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_2 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_1 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.820ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.013ns (0.297 - 0.310)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_2 to hdmi/dvi/fifo/fifo/ram/read_data_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y51.AQ      Tcko                  0.476   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_2
+    SLICE_X15Y52.A4      net (fanout=10)       0.735   hdmi/dvi/fifo/fifo/M_raddr_q[2]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.B6      net (fanout=4)        0.366   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.B       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/Mcount_M_raddr_q_xor<1>11
+    SLICE_X12Y47.A2      net (fanout=15)       1.317   hdmi/dvi/fifo/fifo/M_ram_raddr[1]
+    SLICE_X12Y47.A       Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[5]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMA_D1
+    SLICE_X13Y48.BX      net (fanout=1)        0.890   hdmi/dvi/fifo/fifo/ram/_n0009[1]
+    SLICE_X13Y48.CLK     Tdick                 0.114   hdmi/dvi/fifo/M_fifo_dout[3]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.820ns (1.694ns logic, 4.126ns route)
+                                                       (29.1% logic, 70.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.737ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_rsync_q_6 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_3 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.820ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.011ns (0.297 - 0.308)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_rsync_q_6 to hdmi/dvi/fifo/fifo/ram/read_data_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y52.AQ      Tcko                  0.430   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+                                                       hdmi/dvi/fifo/fifo/M_rsync_q_6
+    SLICE_X15Y52.A1      net (fanout=7)        0.784   hdmi/dvi/fifo/fifo/M_rsync_q[6]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y47.B1      net (fanout=15)       1.409   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y47.B       Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[5]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMB_D1
+    SLICE_X13Y48.DX      net (fanout=1)        0.629   hdmi/dvi/fifo/fifo/ram/_n0009[3]
+    SLICE_X13Y48.CLK     Tdick                 0.114   hdmi/dvi/fifo/M_fifo_dout[3]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_3
+    -------------------------------------------------  ---------------------------
+    Total                                      5.820ns (1.648ns logic, 4.172ns route)
+                                                       (28.3% logic, 71.7% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.738ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_raddr_q_2 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_3 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.817ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.013ns (0.297 - 0.310)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_raddr_q_2 to hdmi/dvi/fifo/fifo/ram/read_data_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y51.AQ      Tcko                  0.476   hdmi/dvi/fifo/fifo/M_raddr_q[3]
+                                                       hdmi/dvi/fifo/fifo/M_raddr_q_2
+    SLICE_X15Y52.A4      net (fanout=10)       0.735   hdmi/dvi/fifo/fifo/M_raddr_q[2]
+    SLICE_X15Y52.A       Tilo                  0.259   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty41
+    SLICE_X15Y52.B4      net (fanout=3)        0.818   hdmi/dvi/fifo/empty4
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y47.B1      net (fanout=15)       1.409   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y47.B       Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[5]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMB_D1
+    SLICE_X13Y48.DX      net (fanout=1)        0.629   hdmi/dvi/fifo/fifo/ram/_n0009[3]
+    SLICE_X13Y48.CLK     Tdick                 0.114   hdmi/dvi/fifo/M_fifo_dout[3]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_3
+    -------------------------------------------------  ---------------------------
+    Total                                      5.817ns (1.694ns logic, 4.123ns route)
+                                                       (29.1% logic, 70.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.742ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi/dvi/fifo/fifo/M_rsync_q_5 (FF)
+  Destination:          hdmi/dvi/fifo/fifo/ram/read_data_1 (FF)
+  Requirement:          6.666ns
+  Data Path Delay:      5.815ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.011ns (0.297 - 0.308)
+  Source Clock:         hdmi/M_pclkx2_buf_O rising at 0.000ns
+  Destination Clock:    hdmi/M_pclkx2_buf_O rising at 6.666ns
+  Clock Uncertainty:    0.098ns
+
+  Clock Uncertainty:          0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.182ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi/dvi/fifo/fifo/M_rsync_q_5 to hdmi/dvi/fifo/fifo/ram/read_data_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y52.AQ      Tcko                  0.525   hdmi/dvi/fifo/fifo/M_rsync_q[5]
+                                                       hdmi/dvi/fifo/fifo/M_rsync_q_5
+    SLICE_X13Y52.A5      net (fanout=7)        0.960   hdmi/dvi/fifo/fifo/M_rsync_q[5]
+    SLICE_X13Y52.A       Tilo                  0.259   hdmi/dvi/fifo/M_fifo_rget1_cepot
+                                                       hdmi/dvi/fifo/fifo/empty42
+    SLICE_X15Y52.B5      net (fanout=3)        0.454   hdmi/dvi/fifo/empty41
+    SLICE_X15Y52.BMUX    Tilo                  0.337   hdmi/dvi/fifo/fifo/M_wsync_q[4]
+                                                       hdmi/dvi/fifo/fifo/empty43
+    SLICE_X12Y52.A4      net (fanout=4)        0.532   hdmi/dvi/fifo/fifo/empty
+    SLICE_X12Y52.A       Tilo                  0.254   hdmi/dvi/fifo/M_raddr_q_1
+                                                       hdmi/dvi/fifo/fifo/M_ram_raddr<0>1
+    SLICE_X12Y47.A1      net (fanout=15)       1.236   hdmi/dvi/fifo/fifo/M_ram_raddr[0]
+    SLICE_X12Y47.A       Tilo                  0.254   hdmi/dvi/fifo/fifo/ram/_n0009[5]
+                                                       hdmi/dvi/fifo/fifo/ram/Mram_mem1_RAMA_D1
+    SLICE_X13Y48.BX      net (fanout=1)        0.890   hdmi/dvi/fifo/fifo/ram/_n0009[1]
+    SLICE_X13Y48.CLK     Tdick                 0.114   hdmi/dvi/fifo/M_fifo_dout[3]
+                                                       hdmi/dvi/fifo/fifo/ram/read_data_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.815ns (1.743ns logic, 4.072ns route)
+                                                       (30.0% logic, 70.0% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_hdmi_M_pll_oserdes_CLKOUT2 = PERIOD TIMEGRP "hdmi_M_pll_oserdes_CLKOUT2"
+        TS_clk_wiz_clkfx * 2 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 4.000ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: hdmi/pclkx2_buf/I0
+  Logical resource: hdmi/pclkx2_buf/I0
+  Location pin: BUFGMUX_X2Y3.I0
+  Clock network: hdmi/M_pll_oserdes_CLKOUT2
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/M_toggle_q/CLK
+  Logical resource: hdmi/dvi/M_toggle_q/CK
+  Location pin: SLICE_X0Y61.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_fifo_dout[20]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/read_data_20/CK
+  Location pin: SLICE_X8Y48.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_fifo_dout[19]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/read_data_21/CK
+  Location pin: SLICE_X8Y50.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_fifo_dout[19]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/read_data_18/CK
+  Location pin: SLICE_X8Y50.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_fifo_dout[19]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/read_data_22/CK
+  Location pin: SLICE_X8Y50.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_fifo_dout[19]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/read_data_19/CK
+  Location pin: SLICE_X8Y50.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_word_q[13]/CLK
+  Logical resource: hdmi/dvi/fifo/M_word_q_7/CK
+  Location pin: SLICE_X8Y55.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_word_q[13]/CLK
+  Logical resource: hdmi/dvi/fifo/M_word_q_6/CK
+  Location pin: SLICE_X8Y55.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_word_q[13]/CLK
+  Logical resource: hdmi/dvi/fifo/M_word_q_9/CK
+  Location pin: SLICE_X8Y55.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_word_q[13]/CLK
+  Logical resource: hdmi/dvi/fifo/M_word_q_8/CK
+  Location pin: SLICE_X8Y55.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_word_q[13]/CLK
+  Logical resource: hdmi/dvi/fifo/M_word_q_12/CK
+  Location pin: SLICE_X8Y55.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_word_q[13]/CLK
+  Logical resource: hdmi/dvi/fifo/M_word_q_11/CK
+  Location pin: SLICE_X8Y55.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_word_q[13]/CLK
+  Logical resource: hdmi/dvi/fifo/M_word_q_14/CK
+  Location pin: SLICE_X8Y55.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_word_q[13]/CLK
+  Logical resource: hdmi/dvi/fifo/M_word_q_13/CK
+  Location pin: SLICE_X8Y55.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/M_fifo_data_out[12]/CLK
+  Logical resource: hdmi/dvi/fifo/M_word_q_26/CK
+  Location pin: SLICE_X8Y56.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/M_fifo_data_out[12]/CLK
+  Logical resource: hdmi/dvi/fifo/M_word_q_27/CK
+  Location pin: SLICE_X8Y56.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_fifo_dout[11]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/read_data_8/CK
+  Location pin: SLICE_X12Y49.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_fifo_dout[11]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/read_data_9/CK
+  Location pin: SLICE_X12Y49.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_fifo_dout[11]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/read_data_10/CK
+  Location pin: SLICE_X12Y49.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_fifo_dout[11]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/ram/read_data_11/CK
+  Location pin: SLICE_X12Y49.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_raddr_q_1/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/M_raddr_q_0/CK
+  Location pin: SLICE_X12Y52.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_raddr_q_1/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/M_raddr_q_1/CK
+  Location pin: SLICE_X12Y52.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/M_rsync_q[5]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/M_rsync_q_5/CK
+  Location pin: SLICE_X16Y52.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/M_rsync_q[2]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/M_rsync_q_0/CK
+  Location pin: SLICE_X16Y54.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/M_rsync_q[2]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/M_rsync_q_1/CK
+  Location pin: SLICE_X16Y54.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/M_rsync_q[2]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/M_rsync_q_3/CK
+  Location pin: SLICE_X16Y54.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.186ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/fifo/M_rsync_q[2]/CLK
+  Logical resource: hdmi/dvi/fifo/fifo/M_rsync_q_2/CK
+  Location pin: SLICE_X16Y54.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.191ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.475ns (2105.263MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_word_q[4]/CLK
+  Logical resource: hdmi/dvi/fifo/M_word_q_0/CK
+  Location pin: SLICE_X6Y52.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+Slack: 6.191ns (period - min period limit)
+  Period: 6.666ns
+  Min period limit: 0.475ns (2105.263MHz) (Tcp)
+  Physical resource: hdmi/dvi/fifo/M_word_q[4]/CLK
+  Logical resource: hdmi/dvi/fifo/M_word_q_10/CK
+  Location pin: SLICE_X6Y52.CLK
+  Clock network: hdmi/M_pclkx2_buf_O
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_clk
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_clk                         |     20.000ns|      8.000ns|     18.219ns|            0|            0|            0|         7855|
+| TS_clk_wiz_clkfx              |     13.333ns|      5.000ns|     12.146ns|            0|            0|            0|         7855|
+|  TS_hdmi_M_pll_oserdes_CLKOUT1|     13.333ns|      6.809ns|          N/A|            0|            0|         4261|            0|
+|  TS_hdmi_M_pll_oserdes_CLKOUT0|      1.333ns|          N/A|          N/A|            0|            0|            0|            0|
+|  TS_hdmi_M_pll_oserdes_CLKOUT2|      6.667ns|      6.073ns|          N/A|            0|            0|         3594|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.809|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 7855 paths, 0 nets, and 1863 connections
+
+Design statistics:
+   Minimum period:   8.000ns{1}   (Maximum frequency: 125.000MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Sun Dec 08 16:41:47 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4555 MB
+
+
+
