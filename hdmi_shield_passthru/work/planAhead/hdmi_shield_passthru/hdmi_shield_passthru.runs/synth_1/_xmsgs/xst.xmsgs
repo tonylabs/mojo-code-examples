@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/edid_rom_2.v" Line 34: Assignment to <arg fmt="%s" index="1">M_i2c_stop</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/edid_rom_2.v" Line 39: Assignment to <arg fmt="%s" index="1">M_i2c_ack</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/edid_rom_2.v" Line 40: Assignment to <arg fmt="%s" index="1">M_i2c_enabled</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/dvi_decoder_5.v" Line 50: Assignment to <arg fmt="%s" index="1">M_pll_CLKOUT3</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/dvi_decoder_5.v" Line 51: Assignment to <arg fmt="%s" index="1">M_pll_CLKOUT4</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/dvi_decoder_5.v" Line 52: Assignment to <arg fmt="%s" index="1">M_pll_CLKOUT5</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 65: Assignment to <arg fmt="%s" index="1">M_io_master_BUSY</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 67: Assignment to <arg fmt="%s" index="1">M_io_master_DATAOUT2</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 68: Assignment to <arg fmt="%s" index="1">M_io_master_TOUT</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 69: Assignment to <arg fmt="%s" index="1">M_io_master_DOUT</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 97: Assignment to <arg fmt="%s" index="1">M_io_slave_DATAOUT2</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 98: Assignment to <arg fmt="%s" index="1">M_io_slave_TOUT</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 99: Assignment to <arg fmt="%s" index="1">M_io_slave_DOUT</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 127: Assignment to <arg fmt="%s" index="1">M_serdes_master_CFB0</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 128: Assignment to <arg fmt="%s" index="1">M_serdes_master_CFB1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 129: Assignment to <arg fmt="%s" index="1">M_serdes_master_DFB</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 131: Assignment to <arg fmt="%s" index="1">M_serdes_master_FABRICOUT</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 165: Assignment to <arg fmt="%s" index="1">M_serdes_slave_CFB0</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 166: Assignment to <arg fmt="%s" index="1">M_serdes_slave_CFB1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 167: Assignment to <arg fmt="%s" index="1">M_serdes_slave_DFB</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 169: Assignment to <arg fmt="%s" index="1">M_serdes_slave_FABRICOUT</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 170: Assignment to <arg fmt="%s" index="1">M_serdes_slave_Q1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 171: Assignment to <arg fmt="%s" index="1">M_serdes_slave_Q2</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 172: Assignment to <arg fmt="%s" index="1">M_serdes_slave_Q3</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 174: Assignment to <arg fmt="%s" index="1">M_serdes_slave_VALID</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_1_to_5_29.v" Line 175: Assignment to <arg fmt="%s" index="1">M_serdes_slave_INCDEC</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/channel_align_31.v" Line 40: Assignment to <arg fmt="%s" index="1">M_fifo_full</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/channel_align_31.v" Line 42: Assignment to <arg fmt="%s" index="1">M_fifo_empty</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/dvi_decoder_5.v" Line 107: Assignment to <arg fmt="%s" index="1">M_dec_r_c0</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/dvi_decoder_5.v" Line 108: Assignment to <arg fmt="%s" index="1">M_dec_r_c1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/dvi_decoder_5.v" Line 109: Assignment to <arg fmt="%s" index="1">M_dec_r_de</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/dvi_decoder_5.v" Line 134: Assignment to <arg fmt="%s" index="1">M_dec_g_c0</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/dvi_decoder_5.v" Line 135: Assignment to <arg fmt="%s" index="1">M_dec_g_c1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/dvi_decoder_5.v" Line 136: Assignment to <arg fmt="%s" index="1">M_dec_g_de</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_n_to_1_17.v" Line 71: Assignment to <arg fmt="%s" index="1">M_mserdes_TQ</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_n_to_1_17.v" Line 74: Assignment to <arg fmt="%s" index="1">M_mserdes_SHIFTOUT3</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_n_to_1_17.v" Line 75: Assignment to <arg fmt="%s" index="1">M_mserdes_SHIFTOUT4</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_n_to_1_17.v" Line 121: Assignment to <arg fmt="%s" index="1">M_sserdes_OQ</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_n_to_1_17.v" Line 122: Assignment to <arg fmt="%s" index="1">M_sserdes_TQ</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_n_to_1_17.v" Line 123: Assignment to <arg fmt="%s" index="1">M_sserdes_SHIFTOUT1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/serdes_n_to_1_17.v" Line 124: Assignment to <arg fmt="%s" index="1">M_sserdes_SHIFTOUT2</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/fifo_2x_reducer_22.v" Line 36: Assignment to <arg fmt="%s" index="1">M_fifo_full</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 70: Assignment to <arg fmt="%s" index="1">M_hdmi_active</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 71: Assignment to <arg fmt="%s" index="1">M_hdmi_x</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 72: Assignment to <arg fmt="%s" index="1">M_hdmi_y</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">cclk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">spi_ss</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">spi_mosi</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">spi_sck</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">avr_tx</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">avr_rx_busy</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/mojo_top_0.v</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">x</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">hdmi</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/mojo_top_0.v</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">y</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">hdmi</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/mojo_top_0.v</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">active</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">hdmi</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/edid_rom_2.v</arg>&quot; line <arg fmt="%s" index="2">26</arg>: Output port &lt;<arg fmt="%s" index="3">stop</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i2c</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/edid_rom_2.v</arg>&quot; line <arg fmt="%s" index="2">26</arg>: Output port &lt;<arg fmt="%s" index="3">ack</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i2c</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/edid_rom_2.v</arg>&quot; line <arg fmt="%s" index="2">26</arg>: Output port &lt;<arg fmt="%s" index="3">enabled</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i2c</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/dvi_decoder_5.v</arg>&quot; line <arg fmt="%s" index="2">95</arg>: Output port &lt;<arg fmt="%s" index="3">c0</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">dec_r</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/dvi_decoder_5.v</arg>&quot; line <arg fmt="%s" index="2">95</arg>: Output port &lt;<arg fmt="%s" index="3">c1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">dec_r</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/dvi_decoder_5.v</arg>&quot; line <arg fmt="%s" index="2">95</arg>: Output port &lt;<arg fmt="%s" index="3">de</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">dec_r</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/dvi_decoder_5.v</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">c0</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">dec_g</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/dvi_decoder_5.v</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">c1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">dec_g</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/dvi_decoder_5.v</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">de</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">dec_g</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/channel_align_31.v</arg>&quot; line <arg fmt="%s" index="2">32</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/channel_align_31.v</arg>&quot; line <arg fmt="%s" index="2">32</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/HOME/Documents/GitHub/mojo-code-examples/hdmi_shield_passthru/work/planAhead/hdmi_shield_passthru/hdmi_shield_passthru.srcs/sources_1/imports/verilog/fifo_2x_reducer_22.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0411</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_mem</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_mem</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_M_c1_pipe_q[1]_PWR_27_o_wide_mux_41_OUT</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hedge/M_last_q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmi_passthru_3</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pipe_gen_0[2].pipe/M_pipe_q_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">pll</arg> in unit <arg fmt="%s" index="2">pll</arg> of type <arg fmt="%s" index="3">PLL_BASE</arg> has been replaced by <arg fmt="%s" index="4">PLL_ADV</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">M_count_q_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tmds_encoder_19</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_y_ctr_q_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_y_ctr_q_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_y_ctr_q_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_y_ctr_q_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_y_ctr_q_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_y_ctr_q_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_y_ctr_q_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_y_ctr_q_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_y_ctr_q_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_y_ctr_q_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_x_ctr_q_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_x_ctr_q_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_x_ctr_q_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_x_ctr_q_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_x_ctr_q_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_x_ctr_q_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_x_ctr_q_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_x_ctr_q_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_x_ctr_q_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_x_ctr_q_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/M_x_ctr_q_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_g/M_data_enabled_q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_g/M_c_q_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_g/M_c_q_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_r/M_data_enabled_q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_r/M_c_q_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_r/M_c_q_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">hdmi/encoder/enc_blue/M_count_q_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mojo_top_0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">hdmi/encoder/enc_green/M_count_q_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mojo_top_0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">hdmi/encoder/enc_red/M_count_q_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mojo_top_0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_b/M_toggle_q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/decoder/dec_g/M_toggle_q&gt; &lt;hdmi/decoder/dec_r/M_toggle_q&gt; &lt;hdmi/encoder/M_toggle_q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_r/channel_align/M_valid_rise_q_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/decoder/dec_g/channel_align/M_valid_rise_q_0&gt; &lt;hdmi/decoder/dec_b/channel_align/M_valid_rise_q_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_r/channel_align/M_valid_rise_q_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/decoder/dec_g/channel_align/M_valid_rise_q_1&gt; &lt;hdmi/decoder/dec_b/channel_align/M_valid_rise_q_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/encoder/enc_blue/M_c1_pipe_q_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/encoder/enc_green/M_c1_pipe_q_0&gt; &lt;hdmi/encoder/enc_red/M_c1_pipe_q_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/encoder/enc_blue/M_c1_pipe_q_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/encoder/enc_green/M_c1_pipe_q_1&gt; &lt;hdmi/encoder/enc_red/M_c1_pipe_q_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_r/des/M_io_init_q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/decoder/dec_g/des/M_io_init_q&gt; &lt;hdmi/decoder/dec_b/des/M_io_init_q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/encoder/enc_blue/M_c0_pipe_q_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/encoder/enc_green/M_c0_pipe_q_0&gt; &lt;hdmi/encoder/enc_red/M_c0_pipe_q_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/encoder/enc_blue/M_c0_pipe_q_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/encoder/enc_green/M_c0_pipe_q_1&gt; &lt;hdmi/encoder/enc_red/M_c0_pipe_q_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_r/des/M_ctr_q_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/decoder/dec_g/des/M_ctr_q_0&gt; &lt;hdmi/decoder/dec_b/des/M_ctr_q_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_r/des/M_ctr_q_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/decoder/dec_g/des/M_ctr_q_1&gt; &lt;hdmi/decoder/dec_b/des/M_ctr_q_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_r/des/M_ctr_q_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/decoder/dec_g/des/M_ctr_q_2&gt; &lt;hdmi/decoder/dec_b/des/M_ctr_q_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_r/des/M_ctr_q_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/decoder/dec_g/des/M_ctr_q_3&gt; &lt;hdmi/decoder/dec_b/des/M_ctr_q_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_r/des/M_ctr_q_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/decoder/dec_g/des/M_ctr_q_4&gt; &lt;hdmi/decoder/dec_b/des/M_ctr_q_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_r/des/M_ctr_q_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/decoder/dec_g/des/M_ctr_q_5&gt; &lt;hdmi/decoder/dec_b/des/M_ctr_q_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_r/des/M_ctr_q_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/decoder/dec_g/des/M_ctr_q_6&gt; &lt;hdmi/decoder/dec_b/des/M_ctr_q_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_r/des/M_ctr_q_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/decoder/dec_g/des/M_ctr_q_7&gt; &lt;hdmi/decoder/dec_b/des/M_ctr_q_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/decoder/dec_r/des/M_ctr_q_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/decoder/dec_g/des/M_ctr_q_8&gt; &lt;hdmi/decoder/dec_b/des/M_ctr_q_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/encoder/enc_blue/M_de_pipe_q_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/encoder/enc_green/M_de_pipe_q_0&gt; &lt;hdmi/encoder/enc_red/M_de_pipe_q_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/encoder/enc_blue/M_de_pipe_q_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/encoder/enc_green/M_de_pipe_q_1&gt; &lt;hdmi/encoder/enc_red/M_de_pipe_q_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="741" delta="new" >HDL ADVISOR - A <arg fmt="%d" index="1">4</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">reset_cond/M_stage_q_3</arg>&gt; and currently occupies <arg fmt="%d" index="3">4</arg> logic cells (<arg fmt="%d" index="4">2</arg> slices). Removing the set/reset logic would take advantage of SRL<arg fmt="%d" index="5">32</arg> (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+</messages>

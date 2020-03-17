@@ -1,0 +1,69 @@
+module mojo_top (
+    input clk,              // 50MHz clock
+    input rst_n,            // reset button (active low)
+    output led [8],         // 8 user controllable LEDs
+    input cclk,             // configuration clock, AVR ready when high
+    output spi_miso,        // AVR SPI MISO
+    input spi_ss,           // AVR SPI Slave Select
+    input spi_mosi,         // AVR SPI MOSI
+    input spi_sck,          // AVR SPI Clock
+    output spi_channel [4], // AVR general purpose pins (used by default to select ADC channel)
+    input avr_tx,           // AVR TX (FPGA RX)
+    output avr_rx,          // AVR RX (FPGA TX)
+    input avr_rx_busy,      // AVR RX buffer full
+    output hdmi1_tmds [4],  // HDMI Out
+    output hdmi1_tmdsb [4],
+    input hdmi2_tmds [4],   // HDMI In
+    input hdmi2_tmdsb [4],
+    inout hdmi2_sda,        // EDID Interface
+    input hdmi2_scl
+  ) {
+   
+  sig rst;                  // reset signal
+   
+  .clk(clk) {
+    // The reset conditioner is used to synchronize the reset signal to the FPGA
+    // clock. This ensures the entire FPGA comes out of reset at the same time.
+    reset_conditioner reset_cond;
+     
+    // connect up the edid rom using a clock we know will alway be running
+    edid_rom edid (.rst(rst), .sda(hdmi2_sda), .scl(hdmi2_scl));
+  }
+  
+  hdmi_passthru hdmi (.rst(0)); // we don't care about the reset
+   
+  // use the pixel clock for the color data
+  .clk(hdmi.pclk) {
+    dff red[8];
+    dff green[8];
+    dff blue[8]; 
+  }
+   
+  always {
+    reset_cond.in = ~rst_n; // input raw inverted reset signal
+    rst = reset_cond.out;   // conditioned reset
+     
+    led = 8h00;             // turn LEDs off
+    spi_miso = bz;          // not using SPI
+    spi_channel = bzzzz;    // not using flags
+    avr_rx = bz;            // not using serial port
+     
+    // connect HDMI input
+    hdmi.tmds_in = hdmi2_tmds;
+    hdmi.tmdsb_in = hdmi2_tmdsb;
+     
+    // connect HDMI output
+    hdmi1_tmds = hdmi.tmds_out;
+    hdmi1_tmdsb = hdmi.tmdsb_out;
+     
+    // save colors
+    red.d = hdmi.red_out;
+    green.d = hdmi.green_out;
+    blue.d = hdmi.blue_out;
+     
+    // output colors
+    hdmi.red_in = red.q;
+    hdmi.green_in = green.q;
+    hdmi.blue_in = blue.q;
+  }
+}

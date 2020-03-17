@@ -1,0 +1,33 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Mar 17 15:11:31 2020
+
+drc -z mojo_top_0_routed.ncd mojo_top_0.pcf
+
+WARNING:PhysDesignRules:367 - The signal
+   <hdmi/encoder/fifo/fifo/ram/Mram_mem1_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <hdmi/encoder/fifo/fifo/ram/Mram_mem2_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <hdmi/encoder/fifo/fifo/ram/Mram_mem5_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <hdmi/encoder/fifo/fifo/ram/Mram_mem4_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <hdmi/encoder/fifo/fifo/ram/Mram_mem3_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <hdmi/decoder/dec_b/channel_align/fifo/ram/Mram_mem1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <hdmi/decoder/dec_g/channel_align/fifo/ram/Mram_mem1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <hdmi/decoder/dec_r/channel_align/fifo/ram/Mram_mem1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+DRC detected 0 errors and 8 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

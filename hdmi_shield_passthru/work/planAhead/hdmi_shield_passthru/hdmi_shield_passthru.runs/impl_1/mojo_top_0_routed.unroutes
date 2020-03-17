@@ -1,0 +1,26 @@
+Release 14.7 - par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Mar 17 15:11:18 2020
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 14 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   avr_rx_busy_IBUF
+   avr_tx_IBUF
+   cclk_IBUF
+   hdmi/decoder/dec_b/channel_align/fifo/ram/Mram_mem1_RAMD_D1_O
+   hdmi/decoder/dec_g/channel_align/fifo/ram/Mram_mem1_RAMD_D1_O
+   hdmi/decoder/dec_r/channel_align/fifo/ram/Mram_mem1_RAMD_D1_O
+   hdmi/encoder/fifo/fifo/ram/Mram_mem1_RAMD_D1_O
+   hdmi/encoder/fifo/fifo/ram/Mram_mem2_RAMD_D1_O
+   hdmi/encoder/fifo/fifo/ram/Mram_mem3_RAMD_D1_O
+   hdmi/encoder/fifo/fifo/ram/Mram_mem4_RAMD_D1_O
+   hdmi/encoder/fifo/fifo/ram/Mram_mem5_RAMD_D1_O
+   spi_mosi_IBUF
+   spi_sck_IBUF
+   spi_ss_IBUF
+
+
