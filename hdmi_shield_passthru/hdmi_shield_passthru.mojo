@@ -16,12 +16,12 @@
     <component>edge_detector.luc</component>
     <component>tmds_encoder.luc</component>
     <component>bit_align.luc</component>
-    <component>serdes_n_to_1.luc</component>
     <component>async_fifo.luc</component>
+    <component>serdes_n_to_1.luc</component>
     <component>reset_conditioner.luc</component>
-    <component>edid_rom.luc</component>
-    <component>pipeline.luc</component>
     <component>simple_dual_ram.v</component>
+    <component>pipeline.luc</component>
+    <component>edid_rom.luc</component>
     <component>serdes_1_to_5.luc</component>
     <core name="clk_wiz_v3_6">
       <src>clk_wiz_v3_6.v</src>
